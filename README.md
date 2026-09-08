@@ -5,7 +5,7 @@ El repositorio de materiales y proyectos de la asignatura **Introducción a la G
 
 ## Curso *[26][27]*
 - Repo con el [temario](https://github.com/miguelancabezon/IGPS)
-  - [A día de hoy, deberíamos saber...](https://github.com/miguelancabezon/25-26-igps/blob/main/plantillas/should-know.md)
+  - [A día de hoy, deberíamos saber...](https://github.com/miguelancabezon/26-27-igps/blob/main/plantillas/should-know.md)
   - [Ejercicios](/actividades/ejercicios)
 - Evaluaciones
   - Evaluación continua: [Actividades](evaluaciones/actividades/README.md)
@@ -15,7 +15,7 @@ El repositorio de materiales y proyectos de la asignatura **Introducción a la G
     - **Extraordinario**: *Espero que nadie llegue aquí*.
 
 
-Se recomienda además el leer los artículos contenidos en la carpeta de [documentos](documentos/README.md)
+Se recomienda además el leer los artículos contenidos en la carpeta de [documentos]([documentos/README.md](https://github.com/miguelancabezon/IGPS/blob/main/documentos/README.md))
 
 ## Herramientas útiles
 
