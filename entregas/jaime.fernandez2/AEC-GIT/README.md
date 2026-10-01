@@ -1,67 +1,38 @@
-ENTREGA AEC-GIT - Jaime Apellido
+# Entrega AEC-GIT - Jaime Fernández
 
-1. FORK DEL REPOSITORIO
-Hice fork del repositorio desde GitHub para tener una copia propia en mi cuenta.
+## 1. Fork del repositorio
+Hice fork del repositorio para tener una copia propia en mi cuenta.
 
-[Captura: capturas/01-fork.png]
+![Fork](capturas/01-fork.png)
+![Fork](capturas/02-fork.png)
 
+## 2. Clonado en local
+Una vez hecho el fork, cloné el repositorio en local en mi ordenador usando
+​ ```git clone https://github.com/jaimefernandez-uneat/26-27-igps.git
+​```
 
-2. CLONADO EN LOCAL
--------------------------------------------
-Cloné mi fork con:
-    git clone https://github.com/TU_USUARIO/NOMBRE_REPO.git
+![Clone](capturas/03-clone.png)
 
-[Captura: capturas/02-clone.png]
+## 3. Estructura de carpetas
+Una vez clonado, dentro de la carpeta del proyecto creé la estructura de carpetas `entregas/jaime.apellido/AEC-GIT`.
 
+![Estructura](capturas/04-estructura.png)
 
-3. ESTRUCTURA DE CARPETAS
--------------------------------------------
-Creé entregas/jaime.apellido/AEC-GIT con:
-    mkdir -p entregas/jaime.apellido/AEC-GIT
+## 4. Primer commit
+Dentro de la carpeta AEC-GIT, creé un archivo de texto vacío "README.txt", añadí el nuevo archivo al área de staging, creé un commit y subí estos cambios a mi repositorio remoto.   
+​```git add .
+git commit -m "docs: nuevo archivo"
+git push origin main
+​```
 
-[Captura: capturas/03-carpetas.png]
+![Commit](capturas/05-commit.png)
+![Push](capturas/06-push.png)
 
+## 5. Rama docs/modificaciones
+Creé y cambié a una nueva rama ​```bash
+git checkout -b docs/modificaciones
+​```
 
-4. PRIMER COMMIT
--------------------------------------------
-Creé informe.txt vacío, lo añadí y subí:
-    git add .
-    git commit -m "docs: nuevo archivo"
-    git push origin main
-
-[Captura: capturas/04-primer-commit.png]
-
-
-5. RAMA DOCS/MODIFICACIONES
--------------------------------------------
-Creé la rama de trabajo:
-    git checkout -b docs/modificaciones
-
-Fui añadiendo capturas y texto en varios commits
-y subí la rama:
-    git push origin docs/modificaciones
-
-[Captura: capturas/05-rama.png]
-[Captura: capturas/06-commits.png]
+![Rama](capturas/07-ramanueva.png)
 
 
-6. MERGE
--------------------------------------------
-    git checkout main
-    git merge docs/modificaciones
-    git push origin main
-
-[Captura: capturas/07-merge.png]
-
-
-7. PULL REQUEST
--------------------------------------------
-Creé la PR desde docs/modificaciones de mi fork
-hacia main del repositorio original.
-
-[Captura: capturas/08-pr.png]
-
-
-CONCLUSIÓN
--------------------------------------------
-(2-3 líneas sobre lo aprendido)
