@@ -13,3 +13,13 @@ Posteriormente se creó la rama `docs/modificaciones`, en la cual se realizó
 la documentación del proceso.
 
 Esta es la carpeta dónde podeís realizar las entregas.
+
+
+
+## Conclusión
+
+La actividad permitió practicar el flujo básico de trabajo con Git y GitHub,
+incluyendo fork, clone, commits, ramas, merge y pull request.
+
+Las capturas incluidas muestran las diferentes acciones realizadas durante
+el proceso.
