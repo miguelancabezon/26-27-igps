@@ -1,0 +1,229 @@
+# GIT
+
+## Control de Versiones
+
+Un **sistema de control de versiones** es una herramienta que registra los cambios realizados en archivos a lo largo del tiempo, permitiendo recuperar versiones específicas cuando sea necesario. Es como tener un "historial de cambios" detallado de tu proyecto.
+
+## Tipos de Sistemas
+
+| Tipo | Descripción | Ejemplos | Desventajas Principales |
+|--|--|--|--|
+|**Locales**|Guardan versiones únicamente en tu computadora local.|RCS (Revision Control System)|Sin colaboración; alto riesgo de pérdida de datos.|
+|**Centralizados**|Un servidor central almacena todas las versiones. Los desarrolladores trabajan contra ese nodo único.|SVN (Subversion), Perforce, CVS|Punto único de falla; dependencia total de la conexión a internet.|
+|**Distribuidos**|Cada desarrollador tiene una copia completa del historial. No exista un punto central obligatorio.|Git|Curva de aprendizaje inicial más alta|
+
+
+![Distribuido vs Centralizado](../../images/control_versiones-distribuido_vs_centralizado.jpg)
+
+---
+
+## ¿Qué es Git?
+
+**Git** es un software de control de versiones gratuito, de código abierto y extremadamente eficiente. Fue diseñado por Linus Torvalds para gestionar el desarrollo del núcleo de Linux, aunque hoy se utiliza en proyectos de cualquier tamaño.
+
+Su propósito es doble:
+1. Llevar un registro preciso de los cambios en el código.
+2. Coordinar el trabajo colaborativo de múltiples personas sobre un mismo repositorio.
+
+### Git vs. GitHub
+
+Es común confundir ambos términos en un principio, pero son cosas distintas:
+
+- **Git** es la herramienta de línea de comandos que instalas en tu máquina. Gestiona el historial localmente.
+- **GitHub** es una forja (plataforma de desarrollo colaborativo) para alojar proyectos utilizando el sistema de control de versiones Git. Se utiliza principalmente para la creación de código fuente de programas de ordenador. Podéis acceder a GitHub a través de este [enlace](https://github.com).
+
+## Historia de Git
+
+A principios de los 2000 el kernel de Linux comenzaba a tener un tamaño considerable. Las versiones, se controlaban con parches enviado a través de correo electrónico indicando los cambios realizados en los archivos. Paralelamente, muchos desarrolladores que aportaban al proyecto, usaban Beekeeper como herramienta para la gestión del código fuente.
+En 2005, Beekeeper eliminó la versión gratuita alegando infracciones de contrato debido a que varios desarrolladores de Linux habían realizado modificaciones en el software desbloqueando funciones de pago. Esta trifulca entre el equipo de Beekeeper y Linux llevó a Linus Torvalds, iniciador y parte importante de Linux, a diseñar un nuevo software de control de versiones tan libre como lo era (y es) Linux.
+
+Así nació Git.
+
+![Linus Torvalds](../../images/linus_torvalds.jpg)
+
+
+
+## Instalación y Configuración Inicial
+
+### Instalación
+- **Windows/macOS/Linux**: Descarga la última versión oficial desde [git-scm.com](https://git-scm.com).
+- **Linux (Debian/Ubuntu)**: También puedes usar el gestor de paquetes:
+```bash
+sudo apt install git-all
+```
+
+Para ver si está instalado correctamente, sólo hay que acceder al terminal e introducir el siguiente comando:
+
+```bash
+git --version
+```
+
+![Git version](../../images/git-version-img.png)
+
+### Configuración global
+
+Por su naturaleza colaborativa, Git utiliza un sistema de cuentas para poder conocer quién ha realizado los cambios en los archivos.
+Para poder usar Git sin que te pida la contraseña en cada acción debemos configurarlo en un inicio con nuestras credenciales:
+
+```bash
+# Establece tu nombre de usuario
+git config --global user.name "Tu Nombre"
+
+# Establece tu email
+git config --global user.email "tu@email.com"
+
+# Verifica toda la configuración actual
+git config --list
+```
+
+
+## Conceptos Clave: Los Tres Entornos de Git
+
+![Git Resumen](../../images/git-resumen.png)
+
+Para entender cómo funciona Git, debes visualizar tres áreas donde residen tus archivos:
+
+
+### Working directory (Directorio de trabajo)
+
+- Este es el directorio/carpeta en el que el ingeniero trabaja, ya sea para cambiar líneas de código, añadir o eliminar archivos, ...
+
+- Dentro de esta carpeta, aparte del proyecto a trabajar, tendremos la carpeta oculta _.git_ que tiene toda la información sobre el historial y los metadatos del repositorio.
+
+Un ejemplo de proyecto con Git sería:
+
+```
+mi-proyecto/
+├── .git        # Carpeta oculta con el historial
+├── index.html
+├── style.css
+└── script.js
+```
+
+Dato: El nombre de la carpeta "mi-proyecto" es el nombre del repositorio de Git.
+
+### Staging Area (Área de "Preparación"/Índice)
+
+El _Staging Area_ es un área intermedia al que iremos añadiendo los cambios que nosotros especifiquemos con el objetivo de preparar tu próximo _commit_. Así, tenemos los cambios agrupados los cambios lógicamente antes de registrarlos en el historial.
+
+Para añadir archivos al staging area sólo necesitaréis el siguiente comando:
+
+```bash
+git add index.html # Para un solo archivo
+git add * # Para incluir al commit todo lo modificado
+```
+
+### Repositorio (carpeta .git)
+
+El repositorio guarda todas las modificaciones y versiones de forma permanente en el historial de git. Esta carpeta es la que va a coordinar con el repositorio remoto (GitHub, por ejemplo).
+Podemos ver cada commit como una versión única del repositorio.
+
+Para añadir los cambios preparados en la staging area, debemos hacer un commit con el siguiente comando:
+```bash
+git commit -m "Add homepage design" # -m Indica el mensaje que vas a escribir entre comillas
+```
+
+
+>[!TIP]
+> Si quieres simplificar el proceso puedes usar el comando `git commit -am "<mensaje>"`, la 'a' adicional te mueve los cambios al Staging Area antes del commit.
+> Eso si, este comando solo funciona **para cambios en archivos**. **No funciona para archivos nuevos**.
+
+### ¿Qué es HEAD?
+
+`HEAD` es un puntero que apunta siempre al último commit de la rama en la que te encuentras actualmente. Es tu posición actual en el historial.
+
+
+### Estados y Registro de Cambios
+
+#### Ver Estado (`git status`)
+
+Este comando te dice en que estado del historial están tus archivos:
+
+- **Untracked**: El archivo con este estado es nuevo y git no lo vigila.
+- **Modified**: Está en git y detecta cambios en el archivo, sin estar añadido al stage area.
+- **Staged**: El archivo está en el _staging area_ y listo para ser comiteado.
+- **Commited**: El archivo está en el repositorio, registrado en el historial de git.
+
+#### Registro de cambios - git log, git show y git diff
+
+Con `git log` vamos a poder ver los commits realizados en el repositorio con su id único y demás datos de interés. Si queremos ver una versión simplificada de estos registros, podemos usar `git log --oneline`.
+
+Con `git show <id_commit>` podremos ver los detalles de un commit.
+
+Por último, con `git diff` podremos ver los cambios realizados que aún no estén en el Área de Preparación (Stage Area). Para ver los cambios del Stage Area usaremos `git diff --staged`.
+
+
+#### Comandos personalizados - git alias
+
+*¿Cansado de escribir comandos largos todo el día?* Ahora puedes crear tus propios comandos con `git alias`. Git alias es otra configuración para poder crear tus propios comandos personalizados.
+
+Como ejemplo, podemos crear un alias para el comando `git status` ejecutando el siguiente comando `git config --global alias.st status`. Ahora, cada vez que quieras ver el estado del repositorio puedes ejecutar `git st`.
+
+Otro ejemplo puede ser simplificar el comando `git log --oneline`. Podemos configurarlo con `git config --global alias.logone "log --online"` (OJO, OJITO a que el comando lleva comillas, porque le hemos añadido el parámetro --oneline).
+
+
+
+### Revertir cambios y manejo de commits
+
+Imagináos la siguiente situación. Estamos trabajando y hacemos distintos commits pero, en un momento, nos damos cuenta de que tenemos un error que hiciste hace varios commits y no tienes ni idea de cómo volver atrás.
+Pues existen varias maneras en las que tendremos que tener en cuenta, qué queremos hacer o deshacer y a qué areas va a afectar esa restauración.
+
+#### `git reset`
+
+Es un poderoso comando que reescribe el historial de commits. Para usarlo, tenemos tres opciones:
+
+  - Soft: `git reset --soft <id_commit>` Mantiene los cambios tanto en el directorio de trabajo cómo en el área de preparación.
+  - Mixed (por defecto): `git reset --mixed <id_commit>` Mantiene los cambios sólo en el directorio de trabajo.
+  - Hard (muy destructivo): `git reset --hard <id_commit>` Descarta todos los cambios en todos los entornos.
+
+#### `git restore`
+
+Es un comando introducido en las versiones más recientes de Git (concretamente la 2.23 de Agosto de 2019) diseñada para deshacer cambios en el directorio de trabajo y en el *staging area*.
+
+  - Para descartar cambios en el directorio de trabajo podemos usar `git restore <ruta_archivo>`. Esto es lo mismo que si usasemos `git checkout -- <ruta_archivo>`.
+  - Para eliminar del *staging area* un archivo, se puede usar `git restore --staged <ruta_archivo>`. Es lo mismo que `git reset <ruta_archivo>`. Este comando no traerá los cambios al directorio de trabajo, tendrías que usar nuevamente `git restore` para que apareciesen (o añadir `--worktree` al comando).
+  - Para reestablecer un archivo de un commit en específico, podemos usar `git restore --source=<id_commit> <ruta_archivo>`.
+
+Se introdujo este nuevo comando para separar la funcionalidad de restaurar archivos con git chekcout y crear comandos más específicos.
+
+#### `git checkout`
+
+Es un comando flexible que te permite navegar entre ramas y reestablecer los archivos en el directorio de trabajo.
+Podemos usarlo para cambiar a un commit específico con `git checkout <id_commit>`.
+
+Y también podemos usarlo para cambiar a una rama existente con `git checkout <nombre_rama>`, o cambiar a una nueva `git checkout -b <nombre_rama_nueva>`.
+
+
+**---Ejercicio práctico---**
+
+- Crear proyecto HTML simple
+- Hacer 5 commits diferentes
+- Explorar git log y git status
+
+### El Formato
+
+Como cuando cada lenguaje, patrón de diseño o tipo de proyecto tiene su formato de carpetas y archivos, Git también tiene el suyo. Puede variar de proyecto en proyecto pero aquí tenéis algunas convenciones:
+
+**CONVENCIONES GENERALES**
+
+Sea como sea tu proyecto asegúrate de cumplir las siguientes normas:
+
+- **Minúsculas y separación por guiones:** Siempre escribe todo en minúsculas y separado por un guión (-).
+- **Sólo caracteres alfanuméricos y guión:** Ni espacios, ni barras bajas, etc, etc...
+- **Sólo un único guión**: Usar más de un guión puede ser confuso.
+- **No terminar con un guión**
+- **Descriptivos:** Con un vistazo deberíamos saber sobre qué trata la rama/commit.
+
+**Mensaje en los commits**
+
+Más información sobre el formato de los commits [aquí](https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13).
+
+### Más información
+
+#### Comandos útiles
+
+- `gitk`: Muestra una representación visual de los cambios de tu repositorio
+
+Si queréis saber más sobre Git y sus posibilidades, [aquí tenéis la documentación](https://git-scm.com/doc).
+
+*Si queréis practicar Git en un playground que os muestra cómo se van formando los commits de manera visual, podéis entrar [aquí](https://learngitbranching.js.org/?locale=es_ES) o [aquí](https://git-school.github.io/visualizing-git), o [aquí](https://gitlearn.io/)*
