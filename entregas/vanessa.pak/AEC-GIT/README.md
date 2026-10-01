@@ -6,9 +6,9 @@ Primero se realizó un fork del repositorio original proporcionado por el
 profesor. De esta forma se creó una copia del repositorio en mi cuenta de
 GitHub.
 
-![Fork del repositorio](01-fork.png)
+![Fork del repositorio] ![alt text](<Captura de pantalla 2026-10-02 001633.png>)
 
-![Fork realizado](02-fork.png)
+![Fork realizado]![alt text](image.png)
 
 
 ## Paso 2 - Clonación del repositorio
@@ -19,7 +19,7 @@ El comando utilizado fue:
 
 `git clone URL_DEL_REPOSITORIO`
 
-![Clonación del repositorio](03-clone.png)
+![Clonación del repositorio] ![alt text](image-1.png)
 
 
 ## Paso 3 - Creación de la estructura de carpetas
@@ -28,7 +28,7 @@ Dentro del proyecto se creó la estructura de carpetas solicitada:
 
 `entregas/nombre.apellido/AEC-GIT`
 
-![Estructura de carpetas](04-estructura.png)
+![Estructura de carpetas] ![alt text](04-estructura.png)
 
 
 ## Paso 4 - Primer commit
@@ -43,7 +43,7 @@ A continuación se realizó el primer commit con el mensaje exacto solicitado:
 
 `docs: nuevo archivo`
 
-![Primer commit](05-commit.png)
+![Primer commit] ![alt text](05-commit.png)
 
 
 ## Paso 5 - Push a GitHub
@@ -66,7 +66,9 @@ utilizando el comando:
 
 `git checkout -b docs/modificaciones`
 
-![Creación de la rama](07-ramanueva.png)
+![Creación de la rama] ![alt text](06-push-1.png)
+
+![alt text](07-ramanueva.png)
 
 
 ## Paso 7 - Trabajo en la nueva rama
@@ -77,6 +79,8 @@ y se añadieron las capturas y la documentación de la actividad.
 Se realizaron varios commits descriptivos para guardar los cambios de forma
 organizada.
 
-![Push de la rama](08-push-rama.png)
+![Push de la rama] ![alt text](08-push-rama.png)
+![alt text](10-push-main.png) 
+![alt text](11-pull-request.png)
 
 
