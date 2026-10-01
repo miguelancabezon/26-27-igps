@@ -1,57 +1,82 @@
 # AEC-GIT
 
-## Paso 1: Fork
+## Paso 1 - Fork del repositorio
 
-Se realizó un fork del repositorio original proporcionado por el profesor.
+Primero se realizó un fork del repositorio original proporcionado por el
+profesor. De esta forma se creó una copia del repositorio en mi cuenta de
+GitHub.
 
-![Fork](01-fork.png)
+![Fork del repositorio](01-fork.png)
 
 ![Fork realizado](02-fork.png)
 
-## Paso 2: Clonación
 
-Se clonó el repositorio utilizando Git mediante el comando:
+## Paso 2 - Clonación del repositorio
 
-`git clone`
+Después del fork se clonó el repositorio en el ordenador utilizando Git.
 
-![Clonación](03-clone.png)
+El comando utilizado fue:
 
-## Paso 3: Estructura de carpetas
+`git clone URL_DEL_REPOSITORIO`
 
-Se creó la estructura indicada por el profesor:
+![Clonación del repositorio](03-clone.png)
 
-`entregas/tu.nombre/AEC-GIT`
 
-![Estructura](04-estructura.png)
+## Paso 3 - Creación de la estructura de carpetas
 
-## Paso 4: Primer commit
+Dentro del proyecto se creó la estructura de carpetas solicitada:
 
-Se creó el archivo README.md y se añadió al área de staging mediante:
+`entregas/nombre.apellido/AEC-GIT`
+
+![Estructura de carpetas](04-estructura.png)
+
+
+## Paso 4 - Primer commit
+
+Dentro de la carpeta `AEC-GIT` se creó el archivo `README.md`.
+
+Después se añadió el archivo al área de staging mediante:
 
 `git add .`
 
-Posteriormente se realizó el commit con el mensaje solicitado:
+A continuación se realizó el primer commit con el mensaje exacto solicitado:
 
 `docs: nuevo archivo`
 
 ![Primer commit](05-commit.png)
 
-## Paso 5: Push
 
-Los cambios se subieron al repositorio remoto mediante:
+## Paso 5 - Push a GitHub
+
+Una vez realizado el primer commit, se subieron los cambios al repositorio
+remoto utilizando:
 
 `git push origin main`
 
-![Push](06-push.png)
+![Push a GitHub](06-push.png)
 
-## Paso 6: Creación de la rama
 
-Se creó una nueva rama llamada:
+## Paso 6 - Creación de la rama
+
+Desde la rama principal se creó una nueva rama llamada:
 
 `docs/modificaciones`
 
-utilizando:
+utilizando el comando:
 
 `git checkout -b docs/modificaciones`
 
-![Nueva rama](07-ramanueva.png)
+![Creación de la rama](07-ramanueva.png)
+
+
+## Paso 7 - Trabajo en la nueva rama
+
+Una vez creada la rama `docs/modificaciones`, se continuó trabajando en ella
+y se añadieron las capturas y la documentación de la actividad.
+
+Se realizaron varios commits descriptivos para guardar los cambios de forma
+organizada.
+
+![Push de la rama](08-push-rama.png)
+
+
