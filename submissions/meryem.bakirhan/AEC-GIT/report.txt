@@ -1,0 +1,21 @@
+AEC-GIT ACTIVITY - Meryem Bakırhan
+
+Step 1 - Fork and clone
+I forked the teacher's repository (miguelancabezon/26-27-igps) into my GitHub account
+and cloned it to my computer using git clone.
+Screenshots: screenshots/01-fork.png, screenshots/02-clone.png
+
+Step 2 - Folder structure
+Inside the "submissions" folder I created my personal folder meryem.bakirhan,
+and inside it the AEC-GIT subfolder.
+Screenshot: screenshots/03-folders.png
+
+Step 3 - First commit and push
+I created the report.txt file, added it to the staging area with git add,
+made the commit "docs: new file" and pushed it to my fork with git push origin main.
+Screenshots: screenshots/04-commit.png, screenshots/05-push.png
+
+Step 4 - New branch
+I created the docs/modification branch with git checkout -b and saved my work
+in several commits: first the screenshots 
+Screenshots: screenshots/06-branch.png, screenshots/07-commit-captures.png
