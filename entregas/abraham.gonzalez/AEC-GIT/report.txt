@@ -1,0 +1,36 @@
+ACTIVIDAD AEC-GIT - Abraham Gonzalez
+
+Paso 1 - Fork y clone
+Hice fork del repositorio del docente (miguelancabezon/26-27-igps) en mi cuenta
+y lo cloné en mi ordenador con git clone.
+Capturas: capturas/01-fork.png, capturas/02-clone.png
+
+Paso 2 - Estructura de carpetas
+Dentro de "entregas" creé mi carpeta abraham.gonzalez y dentro la subcarpeta AEC-GIT.
+Captura: capturas/03-carpetas.png
+
+Paso 3 - Primer commit y push
+Creé el archivo report.txt, lo añadí con git add, hice el commit
+"docs: nuevo archivo" y lo subí a mi fork con git push origin main.
+Capturas: capturas/04-commit.png, capturas/05-push.png
+
+Paso 4 - Rama nueva
+Creé la rama docs/modificaciones con git checkout -b y en ella fui guardando
+el trabajo en varios commits: primero las capturas y después este informe.
+Capturas: capturas/06-rama.png, capturas/07-commit-capturas.png
+
+Captura del commit del informe: capturas/08-commit-informe.png
+
+Conclusión
+Con esta actividad practiqué el flujo básico de Git: hacer fork, clonar,
+crear ramas, hacer commits por partes y subir los cambios a mi repositorio.
+
+Capturas del commit final y del push de la rama: capturas/09-commit-final.png, capturas/10-push-rama.png
+
+Paso 5 - Merge
+Volví a main, combiné la rama docs/modificaciones con git merge y subí main a mi fork.
+Capturas: capturas/11-commit4-push.png, capturas/12-merge-push-main.png
+
+Paso 6 - Pull Request
+Creé la Pull Request desde mi rama docs/modificaciones hacia main del repositorio original.
+Captura: capturas/13-pull-request.png
