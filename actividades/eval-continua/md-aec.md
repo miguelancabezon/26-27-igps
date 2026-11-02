@@ -171,7 +171,7 @@ Include the following elements:
 
 ## 3. Submission Requirements
 
-The submission must be placed in the `submissions > firstname.lastname > AEC-MD` folder:
+The submission must be placed in the `entregas > firstname.lastname > AEC-MD` folder:
 
 1. A `README.md` file containing all the project documentation.
 2. Any graphical resources used, if they are external local files.
