@@ -4,19 +4,24 @@
 ![Version](https://img.shields.io/badge/versi%C3%B3n-v1.0.0-blue.svg)
 ![Status](https://img.shields.io/badge/estado-en%20desarrollo-orange.svg)
 
+![UniBudget Banner](https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80)
+
+<!-- Comentario HTML oculto: Actividad de Evaluación Continua - Markdown -->
+
 :rocket: **UniBudget** es una aplicacion web diseñada para ayudar a los estudiantes universitarios a gestionar sus ingresos y gastos para llegar al final del mes sin complicaciones
 
 El objetivo principal es resolver la *falta de educacion financiera* que sufren muchos estudiantes universitarios. Ofreciendo un dashboard interactivo e intuitivo que no requiere tener conocimientos previos.
 
 ## Indice de contenido
 
-- [1. Presentacion del proyecto](#unibudget---gestor-de-presupuesto-estudiantil)
-- [2. Caracteristicas Principales](#caracteristicas-principales)
-- [3. Instalacion y Configuracion](#instalación-y-configuración)
-- [4. Tecnologias utilizadas](#tecnologías-utilizadas)
-- [5. Ejemplos de uso](#ejemplos-de-uso)
-- [6. Informacion extra](#informacion-extra)
-- [7. Contacto](#contacto)
+1. [Presentacion del proyecto](#unibudget---gestor-de-presupuesto-estudiantil)
+2. [Caracteristicas Principales](#caracteristicas-principales)
+3. [Instalacion y Configuracion](#instalación-y-configuración)
+4. [Tecnologias utilizadas](#tecnologías-utilizadas)
+5. [Arquitectura y funcionamiento](#arquitectura-y-funcionamiento)
+6. [Ejemplos de uso](#ejemplos-de-uso)
+7. [Informacion extra](#informacion-extra)
+8. [Contacto](#contacto)
 
 ---
 
@@ -67,34 +72,48 @@ UniBudget cuenta con diversas funcionalidades clave pensadas para la vida univer
 | **HTML** | `5.0` | Lenguaje de marcado de estructura web | Formularios de entrada |
 | **CSS** | `3.0` | Hojas de estilo en cascada | Diseño |
 | **JavaScript** | `ES6+` | Lenguaje de programación ejecutable en cliente | Calculo financiero |
+| **Git** | `2.x` | Sistema de control de versiones | Gestión del código fuente y flujo de trabajo colaborativo |
 
 ---
 
-## Ejemplos de uso
+## Arquitectura y funcionamiento
 
-### Uso de javascript  
-Codigo para definir el limite mensual:
+UniBudget opera mediante una arquitectura orientada al cliente. Toda la lógica financiera y la validación ocurren en el navegador del usuario.
 
-```javascript
-// Configuración e inicialización del presupuesto inicial
-
-int limiteMensual = 500;
-// Prueba
+```mermaid
+graph TD
+    A[Usuario ingresa datos] --> B(Formulario HTML)
+    B --> C{Validación JS}
+    C -->|Válido| D[Calculadora de Presupuesto]
+    C -->|Inválido| E[Muestra Alerta de Error]
+    D --> F[(localStorage del Navegador)]
+    D --> G[Actualiza Dashboard]
 ```
 
-### 2. Estructura HTML
+## Ejemplos de uso
+
+### 1. Inicialización de presupuesto en JavaScript
+
+```javascript
+// Configuración e inicialización del presupuesto
+const limiteMensual = 500;
+let gastosActuales = 120;
+
+function calcularSaldo(limite, gastos) {
+    return limite - gastos;
+}
+
+console.log(`Saldo disponible: $${calcularSaldo(limiteMensual, gastosActuales)}`);
+```
+
+### 2. Estructura del formulario en HTML
 
 ```html
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Hola Mundo</title>
-</head>
-<body>
-    <h1>Hola Mundo</h1>
-</body>
-</html>
+<form id="form-gasto">
+    <label for="monto">Monto (\*):</label>
+    <input type="number" id="monto" name="monto" required>
+    <button type="submit">Guardar</button>
+</form>
 ```
 Para mas detalles sobre las funcionalidades puedes consultar la [Documentacion oficial](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.youtube.com/watch%3Fv%3DdQw4w9WgXcQ&ved=2ahUKEwixwIKvpe-XAxXp_gIHHQaCAKgQwqsBegQIHxAB&usg=AOvVaw0aHtehaphMhOCAkCydRLZU).
 
@@ -102,6 +121,14 @@ Para mas detalles sobre las funcionalidades puedes consultar la [Documentacion o
 
 > [!WARNING]   
 > **Advertencia sobre privacidad:** Esta aplicación almacena la información exclusivamente en la memoria local de tu navegador (`localStorage`). Si borras el historial o la caché del navegador, los datos registrados se perderán. Se recomienda realizar copias de seguridad periódicas.
+
+<details>
+<summary><b>Haz clic aquí para ver recomendaciones de uso y seguridad</b></summary>
+
+- **Uso sin conexión:** La aplicación no requiere conexión a Internet para funcionar tras cargar la página.
+- **Seguridad:** No introduzcas números de tarjeta, claves bancarias ni datos personales sensibles.
+- **Sintaxis de código:** Si necesitas escribir símbolos de formato sin activar el marcado, utiliza el carácter de escape `\`, como por ejemplo `\#1` o `\*gastos\*`.
+</details>
 
 ## Contacto
 
