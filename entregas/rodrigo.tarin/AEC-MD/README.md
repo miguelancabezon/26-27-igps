@@ -40,3 +40,28 @@ UniBudget cuenta con diversas funcionalidades clave pensadas para la vida univer
 - [x] Exportación de datos
 - [ ] Integración con modelos de inteligencia artificial
 - [ ] Modo oscuro y claro automático según preferencia del sistema
+
+## Instalación y configuración
+
+1. Clona el repositorio desde GitHub a tu máquina local:
+   ```bash
+   git clone https://github.com/usuario/unibudget.git
+   ```
+2. Abre el archivo `index.html` en tu navegador web preferido:
+    ```bash
+    start index.html
+    ```
+
+> **Nota:** Si usas Visual Studio Code, te recomendamos la extensión `Live Server` para recargar los cambios en tiempo real durante la edición.
+
+---
+
+## Tecnologías utilizadas
+
+| Tecnología | Versión | Descripción | Uso en el proyecto |
+| :--- | :---: | :--- | :--- |
+| **HTML** | `5.0` | Lenguaje de marcado de estructura web | Formularios de entrada |
+| **CSS** | `3.0` | Hojas de estilo en cascada | Diseño |
+| **JavaScript** | `ES6+` | Lenguaje de programación ejecutable en cliente | Calculo financiero |
+
+---
