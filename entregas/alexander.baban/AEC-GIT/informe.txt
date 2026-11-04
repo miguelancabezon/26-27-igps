@@ -1,0 +1,6 @@
+[Actividad de Evaluación Continua - GIT]
+
+[Paso uno,creación del repositorio y clonación]; esto se ve adjuntado en la captura:26-27-igps\entregas\alexander.baban\AEC-GIT\capturas\fork-repo y la clonación del archivo de githun se puede apreciar en la captura:26-27-igps\entregas\alexander.baban\AEC-GIT\capturas\clone 
+[Creación de las carpetas principales]; puede ser apreciado en la caputura:26-27-igps\entregas\alexander.baban\AEC-GIT\capturas\aec-git-crear
+[Primer commit y subida inicial]; esto se puede ver refeljado en las siguientes capturas:26-27-igps\entregas\alexander.baban\AEC-GIT\capturas\commit-1 e commit-2
+[Creación de la nueva rama]; se puede ver en la captura:26-27-igps\entregas\alexander.baban\AEC-GIT\capturas\rama
