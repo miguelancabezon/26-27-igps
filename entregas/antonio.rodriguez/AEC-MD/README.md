@@ -35,9 +35,9 @@ El grandioso viaje de Marco es una divertida aplicacion en la cual puedes observ
 + Incluir un contador de dias de cuanto tarda Marco
 + Separar cada dia con una bonita conjuncion de lineas y asteriscos 😮
 
-[x]  Hacer Pasos 1,2,3,4  
-[x]  Terminar la tarea  
-[x]  Hacer pasos 5 , 6, 7
+- [x]  Hacer Pasos 1,2,3,4  
+- [x]  Terminar la tarea  
+- [x]  Hacer pasos 5 , 6, 7
 
 ## Instalacion
  <a id="Instalacion"></a>
@@ -141,7 +141,8 @@ Todo esto fue hecho a base del proyecto realizado en PRG1 el dia del 03/11/26, c
  <a id="creador"></a>
 
 ***
-[Repo del Creador](https://img.shields.io/badge/github-repo-blue?logo=github)(https://github.com/antoniorodriguez07)
+@antoniorodriguez07
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repo-blue?logo=github)](https://github.com/antoniorodriguez07)
 ***
 [Contáctame](antonio.rodriguez@alumnos.uneatlantico.es)
 ***
