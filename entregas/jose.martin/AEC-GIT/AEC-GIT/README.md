@@ -4,24 +4,23 @@
 ![Privacidad](https://img.shields.io/badge/privacidad-100%25%20local-blue)
  
 TaskDone AI es un sistema inteligente de gestión de tareas diseñado para optimizar flujos de trabajo personales y de equipo mediante automatizaciones impulsadas por aprendizaje automático.
-##  Indice
+##  Índice
 - [:rocket: TaskDone AI:rocket:](#rocket-taskdone-airocket)
-  - [Indice](#indice)
+  - [Índice](#índice)
   - [Objetivo principal](#objetivo-principal)
   - [Estudio](#estudio)
   - [Otras Funcionalidades](#otras-funcionalidades)
-      - [La Camara](#la-camara)
+      - [La Cámara](#la-cámara)
       - [Análisis de Picos de Productividad](#análisis-de-picos-de-productividad)
       - [Economía de Descansos:](#economía-de-descansos)
   - [Como salir del modo:](#como-salir-del-modo)
-          - [Ejemplo de lista:](#ejemplo-de-lista)
   - [Privacidad:](#privacidad)
     - [Estado de desarrollo](#estado-de-desarrollo)
   - [Resumen de funcionalidades](#resumen-de-funcionalidades)
   - [Funcionamiento](#funcionamiento)
     - [Contacto](#contacto)
 ## Objetivo principal
->>El objetivo de esta app se basa en resolver la dispersión de información y la falta de concentración, para esto, hemos estado analizando los principales problemas que lo generan, la  app los soluciona.
+>>El objetivo de esta app se basa en resolver la dispersión de información y la falta de concentración, para esto, hemos estado analizando los principales problemas que lo generan, la app los soluciona.
  
 [![imagen.png](https://i.postimg.cc/05F08zhX/imagen.png)](https://postimg.cc/qgc3wvJ2)
 <br>
@@ -33,12 +32,12 @@ TaskDone AI es un sistema inteligente de gestión de tareas diseñado para optim
   >>Las notificaciones no importantes nos hacen mirar el movil, luego, acabas en instagram escrolleando por una misera notificacion.
   Por esto, TaskDone filtra las notificaciones y solo te hace llegar las que no pueden esperar.
 - ##### Las aplicaciones:
-  >>Siempre que empiezas a trabajar te llega la tentacion de abrir apps para lo que se supone va a ser solo un minuto,
-  TaskDonne elimina esto bloqueando apps, las apps que no quieres que se bloqueen podran ser configuradas con muchas mas opciones como si quieres descansos o que no se te bloqueen notificaciones.
+  >>Siempre que empiezas a trabajar, te llega la tentacion de abrir apps que se supone solo vas a usar un minuto,
+  TaskDonne elimina esto bloqueando apps, las apps que no quieres que se bloqueen podran ser configuradas con muchas mas opciones, por ejemplo si quieres descansos o que no se te bloqueen notificaciones.
 ## Otras Funcionalidades
  
-#### La Camara
->>La IA incluye una camara que comprueva que estes siendo productivo, cuando no lo estas siendo inicia un contador y puedes configurar una alarma para que si estas cierto tiempo sin haver nada te avise.    
+#### La Cámara
+>>La IA incluye una cámara que comprueba que estes siendo productivo, cuando no lo estas siendo inicia un contador y puedes configurar una alarma para que si estas cierto tiempo sin haver nada te avise.    
 <br>
  
 #### Análisis de Picos de Productividad
@@ -50,15 +49,10 @@ TaskDone AI es un sistema inteligente de gestión de tareas diseñado para optim
 >>Para hacer el enfoque más amigable, la app introduce un sistema de puntos que ganas al completar tareas difíciles. Estos puntos se pueden canjear por minutos extra de descanso flexible o para desbloquear momentos de ocio sin culpa.
  
 ## Como salir del modo:
->>Pensando sobre las funcionalidades de la app llegamos a la conclusion de que la app no seria util si puedieras salir del modo solo pulsando un boton, por tanto, antes de entrar en el modo tendras que introducir una lista de queaceres y podras salier cuando le demuestres a la IA que has acabado,no te precupes, en un caso de urgencia podras salir del modo exigiendoselo a la IA.
-###### Ejemplo de lista:
-- [ ] Resumen 
-  Subir demostracion:
-  ![resumen](https://imgv2-2-f.scribdassets.com/img/document/187497663/original/91f77666c9/1?v=1)
-- [x] Estudiar (en este caso la IA te preguntara sobre el tema para poder marcarla)
+>>Pensando sobre las funcionalidades de la app llegamos a la conclusión de que la app no seria util si puedieras salir del modo solo pulsando un botón, por tanto, antes de entrar en el modo tendrás que introducir una lista de queaceres y podras salir cuando le demuestres a la IA que has acabado, no te precupes, en un caso de urgencia podras salir del modo exigiendoselo a la IA.
  
 ## Privacidad:
->>La app funciona completamente en local y no envia ningun dato a el sevidor, ni siquiera los desarralladores podrán ver lo que mandas a la IA.
+>>La app funciona completamente en local y no envia ningun dato a el sevidor, ni siquiera los desarrolladores podrán ver lo que mandas a la IA.
  
 ### Estado de desarrollo
  
