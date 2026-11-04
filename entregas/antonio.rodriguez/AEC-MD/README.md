@@ -35,9 +35,9 @@ El grandioso viaje de Marco es una divertida aplicacion en la cual puedes observ
 + Incluir un contador de dias de cuanto tarda Marco
 + Separar cada dia con una bonita conjuncion de lineas y asteriscos 😮
 
-[x] Hacer Pasos 1,2,3,4  
-[ ] Terminar la tarea  
-[ ] Hacer pasos 5 , 6, 7
+[x]  Hacer Pasos 1,2,3,4  
+[x]  Terminar la tarea  
+[x]  Hacer pasos 5 , 6, 7
 
 ## Instalacion
  <a id="Instalacion"></a>
@@ -124,8 +124,8 @@ if (chance_amedio <= PROB_AMEDIO_ESCAPA) {
 ## Enlaces utiles!
  <a id="enlace"></a>
 
-* [Google](https://www.coursera.org/courses?query=java&index=prod_all_products_term_optimization_united_states&languages=es&start=20&utm_medium=sem&utm_source=gg&utm_campaign=b2c_emea_x_multi_ftcof_career-academy_cx_dr_bau_gg_sem_gc_s1_en_m_hyb_24-03_x&campaignid=21119897702&adgroupid=184367650928&device=c&keyword=data%20engineering%20courses&matchtype=p&network=g&devicemodel=&creativeid=749370828398&assetgroupid=&targetid=kwd-346848013160&extensionid=&placement=&gad_source=1&gad_campaignid=21119897702&gclid=CjwKCAiAzKvXBhBAEiwABLl9Av_aFT9z_1wHiXeJbP_uDdR6e0xN8jkztv01bVuTeJ0jSs4imzmiUBoCkAIQAvD_BwE "Curso de JAVA")  
-* [Google](gemini.google.com "Ir a Google gemini") 
+* [Curso de Java](https://www.coursera.org/courses?query=java&index=prod_all_products_term_optimization_united_states&languages=es&start=20&utm_medium=sem&utm_source=gg&utm_campaign=b2c_emea_x_multi_ftcof_career-academy_cx_dr_bau_gg_sem_gc_s1_en_m_hyb_24-03_x&campaignid=21119897702&adgroupid=184367650928&device=c&keyword=data%20engineering%20courses&matchtype=p&network=g&devicemodel=&creativeid=749370828398&assetgroupid=&targetid=kwd-346848013160&extensionid=&placement=&gad_source=1&gad_campaignid=21119897702&gclid=CjwKCAiAzKvXBhBAEiwABLl9Av_aFT9z_1wHiXeJbP_uDdR6e0xN8jkztv01bVuTeJ0jSs4imzmiUBoCkAIQAvD_BwE "Curso de JAVA")  
+* [Google Gemini](gemini.google.com "Ir a Google gemini") 
 
 ## Lista colapsable
  <a id="lista"></a>
@@ -141,7 +141,7 @@ Todo esto fue hecho a base del proyecto realizado en PRG1 el dia del 03/11/26, c
  <a id="creador"></a>
 
 ***
-@antoniorodriguez07 [Repo](https://img.shields.io/badge/github-repo-blue?logo=github)
+[Repo del Creador](https://img.shields.io/badge/github-repo-blue?logo=github)(https://github.com/antoniorodriguez07)
 ***
 [Contáctame](antonio.rodriguez@alumnos.uneatlantico.es)
 ***
