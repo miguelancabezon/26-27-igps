@@ -20,6 +20,9 @@ El grandioso viaje de Marco es una divertida aplicacion en la cual puedes observ
 | Instalacion | [Ir a Instalacion](#Instalacion) |
 | Tecnologias Usadas | [Ir a Tech Usada](#TechUsada) |
 | Florchart | [Ir a flowchart usado](#flowchart) |
+| Ejemplos | [Ir a ejemplo](#ejemplo) |
+| Enlaces | [Ir a enlaces](#enlace) |
+| Creador | [Ir a creador](#creador) |
 
 
 
@@ -103,6 +106,8 @@ if (chance_amedio <= PROB_AMEDIO_ESCAPA) {
 ```
 
 ### Ejemplos de uso
+ <a id="ejemplo"></a>
+
 1. Si juegas con los datos puedes ver como alterar aunque sea una cosita pequena afecta por completo a como seria el viaje, ya sea aumentando mucho los dias o acortandolos, puedes hacer sufrir a Marco o hacer que Amedio le de empujones, con solo cambiar unos numeros.  
 ``` java
   if (chance_amedio <= PROB_AMEDIO_EMPUJA) {
@@ -117,10 +122,14 @@ if (chance_amedio <= PROB_AMEDIO_ESCAPA) {
 2. Sirve como material de estudio de un programa basico hecho en JAVA con bucles simples.  
 
 ## Enlaces utiles!
+ <a id="enlace"></a>
+
 * [Google](https://www.coursera.org/courses?query=java&index=prod_all_products_term_optimization_united_states&languages=es&start=20&utm_medium=sem&utm_source=gg&utm_campaign=b2c_emea_x_multi_ftcof_career-academy_cx_dr_bau_gg_sem_gc_s1_en_m_hyb_24-03_x&campaignid=21119897702&adgroupid=184367650928&device=c&keyword=data%20engineering%20courses&matchtype=p&network=g&devicemodel=&creativeid=749370828398&assetgroupid=&targetid=kwd-346848013160&extensionid=&placement=&gad_source=1&gad_campaignid=21119897702&gclid=CjwKCAiAzKvXBhBAEiwABLl9Av_aFT9z_1wHiXeJbP_uDdR6e0xN8jkztv01bVuTeJ0jSs4imzmiUBoCkAIQAvD_BwE "Curso de JAVA")  
 * [Google](gemini.google.com "Ir a Google gemini") 
 
 ## Lista colapsable
+ <a id="lista"></a>
+
 <details>
 <summary>Click para expandir </summary>
 
@@ -129,8 +138,10 @@ Todo esto fue hecho a base del proyecto realizado en PRG1 el dia del 03/11/26, c
 
 
 ## Creador
+ <a id="creador"></a>
+
 ***
-@antoniorodriguez07
+@antoniorodriguez07 [Repo](https://img.shields.io/badge/github-repo-blue?logo=github)
 ***
 [Contáctame](antonio.rodriguez@alumnos.uneatlantico.es)
 ***
