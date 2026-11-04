@@ -12,7 +12,7 @@ La principal función de la app es ayudar a organizarse mejor a todos sus usuari
 [Arquitectura](#arquitectura)
 [Ejemplos de uso](#ejemplos-de-uso)
 [Información adicional](#información-adicional)
-[Contacto](#contacto)
+[Elementos visuales y avanzados](#Elementos-visuales-y-avanzadoso)
 ### Características
 - [x] Crear tareas.
 - [x] Organizar asignaturas.
@@ -53,6 +53,23 @@ const tarea = {
 #### Ejemplo 2: _Marcar tareas que el mismo haya creado como completadas_
 tarea.completada = true;
 console.log("¡Tarea completada!");
+### Información adicional
+> [!NOTE]
+> Recuerda guardar tus tareas para no perderte nada
+<details>
+Organiza2 está pensado para aquellos estudiantes que tienen muchas cosas en la cabeza y no se quieren olvidar de ninguna!
+</details>
+<!-Markdown es un lenguaje que nunca había utilizado pero es muy intuitiivo!! -->
+
+:heart: Correo: diego.fernandez2@alumnos.uneatlantico.es
+:+1:GitHub: [Contacto](https://github.com/diegofernandez2-commits)
+
+### Elementos visuales y avanzados
+![Estado](https://img.shields.io/badge/build-passing-brightgreen?style=for-the-badge)
+![Licencia](https://img.shields.io/badge/github-repo-blue?logo=github)
+:rocket:  :smile:
+***
+\*Este texto no aparecerá en cursiva\* 
 
 
 
