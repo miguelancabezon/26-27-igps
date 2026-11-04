@@ -133,7 +133,10 @@ Todo esto fue hecho a base del proyecto realizado en PRG1 el dia del 03/11/26, c
 @antoniorodriguez07
 ***
 [Contáctame](antonio.rodriguez@alumnos.uneatlantico.es)
-[Enviar email con asunto](mailto:correo@ejemplo.com?subject=Consulta)
+***
+[Enviar email con asunto](antonio.rodriguez@alumnos.uneatlantico.es?subject=Consulta)
+***
+
 
 > [!WARNING]
 > Se reservan los derechos de autor, prohibido calificar con algun numero menor a 10, se demandara al encontrar algo contrario a lo dicho.
