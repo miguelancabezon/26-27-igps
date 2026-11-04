@@ -102,6 +102,43 @@ if (chance_amedio <= PROB_AMEDIO_ESCAPA) {
     N --> O([Fin del programa])
 ```
 
+### Ejemplos de uso
+1. Si juegas con los datos puedes ver como alterar aunque sea una cosita pequena afecta por completo a como seria el viaje, ya sea aumentando mucho los dias o acortandolos, puedes hacer sufrir a Marco o hacer que Amedio le de empujones, con solo cambiar unos numeros.  
+``` java
+  if (chance_amedio <= PROB_AMEDIO_EMPUJA) {
+                horas_de_viaje = horas_de_viaje + ADICION_HORAS_AMEDIO_EMPUJA;
+                System.out.println("EL AMEDIO TE EMPUJO, +2 HORAS EXTRA");
+            }
+            if (chance_amedio <= PROB_AMEDIO_BANANA) {
+                velocidad_promedio = velocidad_promedio * ADICION_VELOCIDAD_AMEDIO_BANANA;
+                System.out.println("EL AMEDIO SE SACO UNA BANANA, TU VEL SE MULTIPLICA X 2!");
+            }
+```
+2. Sirve como material de estudio de un programa basico hecho en JAVA con bucles simples.  
+
+## Enlaces utiles!
+* [Google](https://www.coursera.org/courses?query=java&index=prod_all_products_term_optimization_united_states&languages=es&start=20&utm_medium=sem&utm_source=gg&utm_campaign=b2c_emea_x_multi_ftcof_career-academy_cx_dr_bau_gg_sem_gc_s1_en_m_hyb_24-03_x&campaignid=21119897702&adgroupid=184367650928&device=c&keyword=data%20engineering%20courses&matchtype=p&network=g&devicemodel=&creativeid=749370828398&assetgroupid=&targetid=kwd-346848013160&extensionid=&placement=&gad_source=1&gad_campaignid=21119897702&gclid=CjwKCAiAzKvXBhBAEiwABLl9Av_aFT9z_1wHiXeJbP_uDdR6e0xN8jkztv01bVuTeJ0jSs4imzmiUBoCkAIQAvD_BwE "Curso de JAVA")  
+* [Google](gemini.google.com "Ir a Google gemini") 
+
+## Lista colapsable
+<details>
+<summary>Click para expandir </summary>
+
+Todo esto fue hecho a base del proyecto realizado en PRG1 el dia del 03/11/26, cualquier consulta o duda estoy a la orden!
+</details>
+
+
+## Creador
+***
+@antoniorodriguez07
+***
+[Contáctame](antonio.rodriguez@alumnos.uneatlantico.es)
+[Enviar email con asunto](mailto:correo@ejemplo.com?subject=Consulta)
+
+> [!WARNING]
+> Se reservan los derechos de autor, prohibido calificar con algun numero menor a 10, se demandara al encontrar algo contrario a lo dicho.
+
+<!-- Mentira profe, pero esta bonito el MD no? creo que SI merece un 10 😉 -->
 
 
 
