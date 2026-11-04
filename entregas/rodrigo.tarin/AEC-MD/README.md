@@ -1,22 +1,22 @@
-# UniBudget - Gestor de Presupuesto Estudiantil
+# :moneybag: UniBudget - Gestor de Presupuesto Estudiantil 
 
 ![License](https://img.shields.io/badge/licencia-MIT-green.svg)
 ![Version](https://img.shields.io/badge/versi%C3%B3n-v1.0.0-blue.svg)
 ![Status](https://img.shields.io/badge/estado-en%20desarrollo-orange.svg)
 
-**UniBudget** es una aplicacion web diseñada para ayudar a los estudiantes universitarios a gestionar sus ingresos y gastos para llegar al final del mes sin complicaciones
+:rocket: **UniBudget** es una aplicacion web diseñada para ayudar a los estudiantes universitarios a gestionar sus ingresos y gastos para llegar al final del mes sin complicaciones
 
 El objetivo principal es resolver la *falta de educacion financiera* que sufren muchos estudiantes universitarios. Ofreciendo un dashboard interactivo e intuitivo que no requiere tener conocimientos previos.
 
 ## Indice de contenido
 
-- 1. Presentacion del proyecto
-- 2. Caracteristicas Principales
-- 3. Instalacion y Configuracion
-- 4. Tecnologias utilizadas
-- 5. Funcionamiento
-- 6. Informacion extra
-- 7. Contacto
+- [1. Presentacion del proyecto](#unibudget---gestor-de-presupuesto-estudiantil)
+- [2. Caracteristicas Principales](#caracteristicas-principales)
+- [3. Instalacion y Configuracion](#instalación-y-configuración)
+- [4. Tecnologias utilizadas](#tecnologías-utilizadas)
+- [5. Ejemplos de uso](#ejemplos-de-uso)
+- [6. Informacion extra](#informacion-extra)
+- [7. Contacto](#contacto)
 
 ---
 
