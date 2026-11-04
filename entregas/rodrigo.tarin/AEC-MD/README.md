@@ -65,3 +65,36 @@ UniBudget cuenta con diversas funcionalidades clave pensadas para la vida univer
 | **JavaScript** | `ES6+` | Lenguaje de programación ejecutable en cliente | Calculo financiero |
 
 ---
+
+## Funcionamiento
+
+### Uso de javascript  
+Codigo para definir el limite mensual:
+
+```javascript
+// Configuración e inicialización del presupuesto inicial
+
+int limiteMensual = 500;
+// Prueba
+```
+
+### 2. Estructura HTML
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Hola Mundo</title>
+</head>
+<body>
+    <h1>Hola Mundo</h1>
+</body>
+</html>
+```
+Para mas detalles sobre las funcionalidades puedes consultar la [Documentacion oficial](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.youtube.com/watch%3Fv%3DdQw4w9WgXcQ&ved=2ahUKEwixwIKvpe-XAxXp_gIHHQaCAKgQwqsBegQIHxAB&usg=AOvVaw0aHtehaphMhOCAkCydRLZU).
+
+## Informacion extra
+
+> [!WARNING]   
+> **Advertencia sobre privacidad:** Esta aplicación almacena la información exclusivamente en la memoria local de tu navegador (`localStorage`). Si borras el historial o la caché del navegador, los datos registrados se perderán. Se recomienda realizar copias de seguridad periódicas.
