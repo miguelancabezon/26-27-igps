@@ -16,15 +16,21 @@ El grandioso viaje de Marco es una divertida aplicacion en la cual puedes observ
 | Inicio | [Ir al inicio](#begin) |
 |:----------:|:--------:|
 | Objetivos    | [Ir a objetivos](#objetivos)   |
-| Más texto | Centrado |
+| Funcionalidades | [Ir a funcionalidades](#Funciona) |
 
 
 ### Funcionalidades
+<a id="Funciona"></a>
 + Señalar como se implementan las probabilidades en JAVA
 + Aclarar una bonita historia de amor
 + Enseñar las probabilidades no excluyentes
     + Como Amedio se puede escapar y cansar el mismo dia!
-+ Incluir un contador de dia
++ Incluir un contador de dias de cuanto tarda Marco
++ Separar cada dia con una bonita conjuncion de lineas y asteriscos 😮
+
+[x] Hacer Pasos 1,2,3  
+[ ] Terminar la tarea  
+[ ] Otra tarea pendiente
 
 
 
