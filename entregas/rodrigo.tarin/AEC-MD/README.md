@@ -66,7 +66,7 @@ UniBudget cuenta con diversas funcionalidades clave pensadas para la vida univer
 
 ---
 
-## Funcionamiento
+## Ejemplos de uso
 
 ### Uso de javascript  
 Codigo para definir el limite mensual:
@@ -98,3 +98,9 @@ Para mas detalles sobre las funcionalidades puedes consultar la [Documentacion o
 
 > [!WARNING]   
 > **Advertencia sobre privacidad:** Esta aplicación almacena la información exclusivamente en la memoria local de tu navegador (`localStorage`). Si borras el historial o la caché del navegador, los datos registrados se perderán. Se recomienda realizar copias de seguridad periódicas.
+
+## Contacto
+
+Si tienes sugerencias o has detectado algun error o quieres contribuir al proyecto. Ponte en contacto:
+
+- **Web del desarrollador** [https://github.com/rodrigotar](https://github.com/rodrigotar)
