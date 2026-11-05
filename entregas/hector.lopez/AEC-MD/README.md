@@ -1,7 +1,7 @@
 # Pitufut FC
 <a id="inicio"></a>
 
-<div align="center" height="40">
+<div align="center" height="20">
 
 ![Pitufut FC Logo](images/logo_trabajo.png  "Pitu FC Logo")
 </div>
