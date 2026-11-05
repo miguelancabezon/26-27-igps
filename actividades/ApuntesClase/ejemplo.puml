@@ -1,0 +1,10 @@
+@startgantt
+
+[Diseño] requires 5 days
+[Desarrollo] requires 10 days
+[Pruebas] requires 3 days
+
+[Desarrollo] starts at [Diseño]'s end
+[Pruebas] starts at [Desarrollo]'s end
+
+@endgantt
