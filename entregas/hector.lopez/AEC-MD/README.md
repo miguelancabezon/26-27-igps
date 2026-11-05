@@ -135,10 +135,10 @@ En el archivo `.env` hay que cambiar estas variables:
 
 | Tecnología | Versión | Descripción | Uso en el proyecto |
 |:-----------|:-----------:|:-----------|-----------:|
-| **React Native** | `0.74` | Framework para crear apps móviles | Pantallas de la app |
-| **Expo** | `51` | Herramienta para probar la app en el móvil | Desarrollo y pruebas |
-| **Node.js** | `20` | Entorno para ejecutar JavaScript | Servidor de la app |
-| **Firebase** | `10` | Base de datos en la nube | Guardar jugadores y partidos |
+| **React Native** | `0.88.1` | Framework para crear apps móviles | Pantallas de la app |
+| **Expo** | `58` | Herramienta para probar la app en el móvil | Desarrollo y pruebas |
+| **Node.js** | `26.13.0` | Entorno para ejecutar JavaScript | Servidor de la app |
+| **Firebase** | `13.2.0` | Base de datos en la nube | Guardar jugadores y partidos |
 | **Google Maps** | *API* | Mapas de Google | Mostrar dónde está el campo |
 
 ---
