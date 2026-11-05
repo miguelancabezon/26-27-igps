@@ -138,7 +138,6 @@ Más información: [Sede electrónica de la Policía Nacional](https://sede.poli
 
 > :warning: **Aviso importante:** Trámita es un proyecto ficticio y **no ofrece asesoramiento legal**. Los requisitos y plazos cambian según la provincia: verifícalos siempre en la [sede electrónica oficial](https://sede.administracionespublicas.gob.es).
 
-<!-- Comentario invisible: revisar los plazos antes de la entrega final -->
 
 <details>
 <summary>Ver la lista completa de documentos</summary>
