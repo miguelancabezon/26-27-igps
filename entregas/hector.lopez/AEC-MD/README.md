@@ -4,7 +4,7 @@
 <div align="center" height="20">
 
 ![Pitufut FC Logo](images/logo_trabajo.png  "Pitu FC Logo")
-</div>
+
 
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
@@ -13,6 +13,7 @@
 ![Deporte](https://img.shields.io/badge/deporte-fútbol-brightgreen.svg)
 ![Plataforma](https://img.shields.io/badge/plataforma-Android%20%7C%20iOS-lightgrey.svg)
 
+</div>
 
 
 ## Presentación del proyecto
