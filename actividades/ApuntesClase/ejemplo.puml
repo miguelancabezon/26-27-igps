@@ -1,17 +1,7 @@
-@startjson
+@startgantt
 
-{
-  "nombre": "Ana",
-  "edad": 30,
-  "es_empleado": true,
-  "altura": 1.68,
-  "hobbies": ["leer", "caminar", "cocinar"],
-  "direccion": {
-    "calle": "Calle Falsa 123",
-    "ciudad": "Santander",
-    "codigo_postal": "39001"
-  },
-  "telefono_secundario": null
-}
+[Diseño] requires 5 days
+[Desarrollo] requires 10 days
+[Pruebas] requires 3 days
 
-@endjson
+@endgantt
