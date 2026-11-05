@@ -1,0 +1,17 @@
+@startjson
+
+{
+  "nombre": "Ana",
+  "edad": 30,
+  "es_empleado": true,
+  "altura": 1.68,
+  "hobbies": ["leer", "caminar", "cocinar"],
+  "direccion": {
+    "calle": "Calle Falsa 123",
+    "ciudad": "Santander",
+    "codigo_postal": "39001"
+  },
+  "telefono_secundario": null
+}
+
+@endjson
