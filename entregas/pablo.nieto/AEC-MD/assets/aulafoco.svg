@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 240" role="img" aria-labelledby="title desc">
+  <title id="title">AulaFoco</title>
+  <desc id="desc">Brújula azul con una marca de verificación y el nombre AulaFoco</desc>
+  <rect width="880" height="240" rx="28" fill="#f1f5f9"/>
+  <circle cx="124" cy="120" r="78" fill="#1d4ed8"/>
+  <circle cx="124" cy="120" r="59" fill="#eff6ff"/>
+  <path d="M124 67L139 105L177 120L139 135L124 173L109 135L71 120L109 105Z" fill="#93c5fd"/>
+  <path d="m96 121 18 18 39-43" fill="none" stroke="#0f766e" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="230" y="133" fill="#0f172a" font-family="Arial, sans-serif" font-size="76" font-weight="700">AulaFoco</text>
+  <text x="235" y="179" fill="#475569" font-family="Arial, sans-serif" font-size="24">Tu estudio, paso a paso</text>
+</svg>
