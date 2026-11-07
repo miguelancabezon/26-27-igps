@@ -18,6 +18,19 @@ El problema principal que aborda PetHome Initiative es tanto la falta de visibil
 
 ---
 
+## 2. Índice de contenidos
+
+1. [Presentación del proyecto](#1-presentación-del-proyecto)
+2. [Índice de contenidos](#2-índice-de-contenidos)
+3. [Características principales](#3-características-principales)
+4. [Instalación y configuración](#4-instalación-y-configuración)
+5. [Tecnologías utilizadas](#5-tecnologías-utilizadas)
+6. [Arquitectura y funcionamiento](#6-arquitectura-y-funcionamiento)
+7. [Ejemplos de uso](#7-ejemplos-de-uso)
+8. [Información adicional](#8-información-adicional)
+
+---
+
 ## 3. Características principales
 
 A continuación, detallaremos las características principales de la plataforma y su proceso de desarrollo:
