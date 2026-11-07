@@ -133,3 +133,25 @@ const response = await fetch('[https://api.pethome.org/v1/adoptions](https://api
 const result = await response.json();
 console.log('Solicitud creada con éxito:', result);
 ```
+
+## 8. Información adicional
+
+> [!NOTE]
+> **Nota Importante:** Todas las solicitudes de adpoción serán tramitadas por la misma página web.
+
+<details>
+<summary><b>Haz clic aquí para ver los requisitos legales de colaboración para protectoras</b></summary>
+
+Para que un refugio o protectora esté legalmente cualificado/a para colaborar con **PetHome Initiative** debe cumplir los siguientes requisitos:
+
+- Estar constituido/a legalmente como entidad sin ánimo de lucro.
+- Disponer de un número de identificación fiscal (NIF) en regla.
+- Cumplir con la normativa autonómica vigente en materia de protección animal y núcleos zoológicos.
+</details>
+
+## Contacto y soporte de la iniciativa
+
+Si existe cualquier otro tipo de duda o problema relacionado con la asociación, no dude en contactarnos.
+
+- **Correo electrónico de soporte:**[soporte@pethome-platform.org](mailto:soporte@pethome-platform.org)
+- **Sitio web oficial:** [Plataforma PetHome](https://www.pethome-platform.org)
