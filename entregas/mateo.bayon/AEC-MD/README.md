@@ -57,3 +57,14 @@ Para poner en marcha la plataforma de **PetHome Initiative** y todos los cambios
     ```bash
     npm run db:seed
     ```
+
+## 5. Tecnologías utilizadas
+
+A continuación, se detallan las distintas tecnologías utilizadas para la realización de esta iniciativa: 
+
+| Tecnología | Versión | Descripción | Uso en el proyecto |
+| :--- | :---: | :--- | :--- |
+| **Node.js** | `v20.x` | Entorno de ejecución de JavaScript del lado del servidor, rápido y eficiente. | Motor principal para ejecutar el *backend* y la lógica de negocio de la API. |
+| **PostgreSQL** | `v15.2` | Sistema de gestión de bases de datos relacional robusto y altamente escalable. | Almacenamiento seguro de datos de usuarios, refugios y el catálogo de animales. |
+| **React** | `v18.2` | Biblioteca de JavaScript para la construcción de interfaces de usuario interactivas. | Desarrollo del panel de control web y la vista del catálogo unificado de adopción. |
+| **Docker** | `v24.0` | Plataforma de contenedores de código abierto para automatizar el despliegue. | Estandarización del entorno de desarrollo y despliegue en producción de la iniciativa. |
