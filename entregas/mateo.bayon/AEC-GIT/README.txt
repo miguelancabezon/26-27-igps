@@ -1,0 +1,1 @@
+En las instrucciones de la tarea ponía que había que poner las capturas de pantalla en el .txt que he creado en esta carpeta. No sé como poner imágenes en un archivo .txt, que yo sepa ni siquiera se puede, he puesto las capturas en esta carpeta en vez de eso, espero que siga contando. 
