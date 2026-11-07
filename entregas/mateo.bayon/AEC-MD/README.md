@@ -86,3 +86,50 @@ graph TD
     G -- No --> H[Notificación de rechazo al usuario]
     G -- Sí --> I[Notificación de aceptación y visita concertada]
     I --> J[Aprobación final y adopción completada]
+
+## 7. Ejemplos de uso
+
+A continuación, se muestran dos ejemplos prácticos de como interactuar con el sistema de **PetHome Initiative**:
+
+### Ejemplo 1: Consultar el catálogo de mascotas disponibles
+Para obtener un listado filtrado de animales listos para la adopción, puedes envíar una petición `GET` al punto de enlace `/api/pets`:
+
+```json
+/api/v1/pets?species=dog&status=available
+{
+  "status": "success",
+  "data": [
+    {
+      "id": "pet-001",
+      "name": "Luna",
+      "species": "Perro",
+      "breed": "Mestizo",
+      "age": "2 años",
+      "shelter": "Refugio Esperanza",
+      "status": "Disponible"
+    }
+  ]
+}
+```
+
+### Ejemplo 2: Registrar una solicitud de pre-adopción
+Un usuario o una protectora puede enviar una solicitud mediante una petición `POST` con los datos del formulario de pre-adopción:
+
+```json
+const response = await fetch('[https://api.pethome.org/v1/adoptions](https://api.pethome.org/v1/adoptions)', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+    'Authorization': 'Bearer TU_TOKEN_JWT'
+  },
+  body: JSON.stringify({
+    petId: 'pet-001',
+    applicantName: 'María García',
+    housingType: 'Piso con terraza',
+    hasOtherPets: true
+  })
+});
+
+const result = await response.json();
+console.log('Solicitud creada con éxito:', result);
+```
