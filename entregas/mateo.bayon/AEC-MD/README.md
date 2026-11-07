@@ -68,3 +68,21 @@ A continuación, se detallan las distintas tecnologías utilizadas para la reali
 | **PostgreSQL** | `v15.2` | Sistema de gestión de bases de datos relacional robusto y altamente escalable. | Almacenamiento seguro de datos de usuarios, refugios y el catálogo de animales. |
 | **React** | `v18.2` | Biblioteca de JavaScript para la construcción de interfaces de usuario interactivas. | Desarrollo del panel de control web y la vista del catálogo unificado de adopción. |
 | **Docker** | `v24.0` | Plataforma de contenedores de código abierto para automatizar el despliegue. | Estandarización del entorno de desarrollo y despliegue en producción de la iniciativa. |
+
+## 6. Arquitectura y funcionamiento
+
+El funcionamiento de **PetHome Initiative** se basa en un flujo automatizado que conecta de forma eficiente al potencial adoptante con los refujios y las mascotas disponibles en adopción.
+
+El siguiente diagrama de flujo entra en detalle sobre cómo funciona la plataforma:
+
+```mermaid
+graph TD
+    A[Inicio: Usuario accede al catálogo de mascotas] --> B{¿Usuario encuentra mascota?}
+    B -- No --> C[Ajusta filtros de búsqueda]
+    B -- Sí --> D[Rellena formulario de pre-adopción]
+    D --> E[Envío de documentación y cuestionario de compatibilidad]
+    E --> F[Revisión por la protectora de animales]
+    F --> G{¿Es compatible?}
+    G -- No --> H[Notificación de rechazo al usuario]
+    G -- Sí --> I[Notificación de aceptación y visita concertada]
+    I --> J[Aprobación final y adopción completada]
