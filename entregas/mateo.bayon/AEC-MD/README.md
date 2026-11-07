@@ -1,8 +1,10 @@
-# PetHome Initiative
+# PetHome Initiative 🐶🐱
 
 Esta iniciativa tiene como objetivo principal darle un hogar a cientos de mascotas que actualmente se encuentran sin hogar a través del internet con la ayuda de la comunidad.
 
 ![Interfaz principal de PetHome](assets/petHomeInitiativeLogo.png)
+
+---
 
 ## 1. Presentación del proyecto
 
@@ -13,6 +15,8 @@ El problema principal que aborda PetHome Initiative es tanto la falta de visibil
 - Un **catálogo unificado** de todas las mascotas disponibles para adopción, con información detallada y fotos de cada una.
 - Un **sistema de gestión de adopciones** que permita a las protectoras organizar y hacer seguimiento de las solicitudes de adopción de manera eficiente.
 - Una **campaña de marketing digital** para aumentar el interés y la visibilidad a nuestra plataforma y a las mascotas disponibles para adopción.
+
+---
 
 ## 3. Características principales
 
@@ -30,6 +34,8 @@ A continuación, detallaremos las características principales de la plataforma 
 - [ ] **Campaña de marketing digital**
     - Contratar a un diseñador gráfico porque lo de nuestro logo es inexcusable. Está hecho en Microsoft Paint, ¿qué clase de compañía profesional hace su logo en Microsoft Paint?
     - Crear contenido visuak atractivo para redes sociales y anuncios en línea.
+
+---
 
 ## 4. Instalación y configuración
 
@@ -58,6 +64,8 @@ Para poner en marcha la plataforma de **PetHome Initiative** y todos los cambios
     npm run db:seed
     ```
 
+---
+
 ## 5. Tecnologías utilizadas
 
 A continuación, se detallan las distintas tecnologías utilizadas para la realización de esta iniciativa: 
@@ -68,6 +76,8 @@ A continuación, se detallan las distintas tecnologías utilizadas para la reali
 | **PostgreSQL** | `v15.2` | Sistema de gestión de bases de datos relacional robusto y altamente escalable. | Almacenamiento seguro de datos de usuarios, refugios y el catálogo de animales. |
 | **React** | `v18.2` | Biblioteca de JavaScript para la construcción de interfaces de usuario interactivas. | Desarrollo del panel de control web y la vista del catálogo unificado de adopción. |
 | **Docker** | `v24.0` | Plataforma de contenedores de código abierto para automatizar el despliegue. | Estandarización del entorno de desarrollo y despliegue en producción de la iniciativa. |
+
+---
 
 ## 6. Arquitectura y funcionamiento
 
@@ -86,6 +96,9 @@ graph TD
     G -- No --> H[Notificación de rechazo al usuario]
     G -- Sí --> I[Notificación de aceptación y visita concertada]
     I --> J[Aprobación final y adopción completada]
+```
+
+---
 
 ## 7. Ejemplos de uso
 
@@ -133,6 +146,7 @@ const response = await fetch('[https://api.pethome.org/v1/adoptions](https://api
 const result = await response.json();
 console.log('Solicitud creada con éxito:', result);
 ```
+---
 
 ## 8. Información adicional
 
@@ -155,3 +169,5 @@ Si existe cualquier otro tipo de duda o problema relacionado con la asociación,
 
 - **Correo electrónico de soporte:**[soporte@pethome-platform.org](mailto:soporte@pethome-platform.org)
 - **Sitio web oficial:** [Plataforma PetHome](https://www.pethome-platform.org)
+
+---
