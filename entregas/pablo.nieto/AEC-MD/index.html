@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AulaFoco · Planificador de estudio</title>
+  <style>
+    :root { font-family: system-ui, sans-serif; color: #172337; background: #f3f6fb; }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    header { background: #173ea9; color: white; padding: 2.5rem max(1rem, calc((100vw - 980px)/2)); }
+    header h1 { margin: 0; font-size: 2.4rem; }
+    header p { margin-bottom: 0; color: #dce8ff; }
+    main { max-width: 980px; margin: 2rem auto; padding: 0 1rem 3rem; }
+    .card { background: white; border: 1px solid #dce4ef; border-radius: 18px; padding: 1.5rem; box-shadow: 0 8px 28px #16336b0d; margin-bottom: 1.3rem; }
+    h2 { margin: 0 0 1.1rem; font-size: 1.3rem; }
+    label { display: grid; gap: .45rem; font-weight: 650; font-size: .94rem; }
+    input, select { width: 100%; padding: .73rem .8rem; border: 1px solid #b7c7dc; border-radius: 9px; background: white; color: #172337; font: inherit; }
+    input:focus, select:focus, button:focus-visible { outline: 3px solid #9bc3ff; outline-offset: 2px; }
+    form { display: grid; grid-template-columns: 1.6fr 1fr 1fr .8fr; gap: .9rem; align-items: end; }
+    button, .file-button { border: 0; border-radius: 9px; padding: .75rem 1rem; background: #1944bb; color: white; font: inherit; font-weight: 650; cursor: pointer; text-align: center; }
+    button:hover, .file-button:hover { background: #12368f; }
+    button.secondary, .file-button { background: #e8effb; color: #12368f; }
+    button.secondary:hover, .file-button:hover { background: #d7e5fb; }
+    button.danger { background: #fff0ed; color: #a53122; }
+    button.danger:hover { background: #ffddd7; }
+    form button { grid-column: 1 / -1; justify-self: start; }
+    .message { min-height: 1.5rem; margin: .7rem 0 0; color: #0c664d; }
+    .message.error { color: #ad281d; }
+    .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: .9rem; }
+    .stat { background: #edf3ff; border-radius: 12px; padding: 1rem; }
+    .stat strong { display: block; color: #173ea9; font-size: 1.8rem; }
+    .toolbar { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem; }
+    .filters, .backup { display: flex; gap: .5rem; flex-wrap: wrap; }
+    .filters button[aria-pressed="true"] { background: #1944bb; color: white; }
+    .file-button input { display: none; }
+    ul { list-style: none; margin: 0; padding: 0; }
+    .task { display: flex; justify-content: space-between; gap: 1rem; align-items: center; border-top: 1px solid #e4eaf2; padding: .95rem 0; }
+    .task:first-child { border-top: 0; }
+    .task-title { font-weight: 700; }
+    .task.done .task-title { color: #66758b; text-decoration: line-through; }
+    .meta { color: #617087; font-size: .9rem; margin-top: .3rem; }
+    .actions { display: flex; gap: .4rem; flex-wrap: wrap; flex-shrink: 0; }
+    .empty { color: #66758b; padding: 1rem 0; }
+    @media (max-width: 720px) { form { grid-template-columns: 1fr 1fr; } .task { align-items: flex-start; flex-direction: column; } }
+    @media (max-width: 480px) { form, .stats { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🧭 AulaFoco</h1>
+    <p>Organiza tus entregas y repasos sin perder de vista lo importante.</p>
+  </header>
+  <main>
+    <section class="card" aria-labelledby="new-title">
+      <h2 id="new-title">Nueva tarea</h2>
+      <form id="task-form">
+        <label>Tarea <input id="title" name="title" maxlength="100" required placeholder="Preparar presentación"></label>
+        <label>Asignatura <input id="subject" name="subject" maxlength="60" required placeholder="IGPS"></label>
+        <label>Fecha límite <input id="due" name="due" type="date" required></label>
+        <label>Prioridad <select id="priority" name="priority"><option value="media">Media</option><option value="alta">Alta</option><option value="baja">Baja</option></select></label>
+        <button type="submit">Añadir tarea</button>
+      </form>
+      <p id="message" class="message" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="card" aria-label="Resumen del plan">
+      <div class="stats">
+        <div class="stat"><strong id="pending-count">0</strong>Pendientes</div>
+        <div class="stat"><strong id="soon-count">0</strong>Vencen en 7 días</div>
+        <div class="stat"><strong id="done-count">0</strong>Completadas</div>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="list-title">
+      <h2 id="list-title">Mi plan</h2>
+      <div class="toolbar">
+        <div class="filters" aria-label="Filtrar tareas">
+          <button type="button" class="secondary" data-filter="all" aria-pressed="true">Todas</button>
+          <button type="button" class="secondary" data-filter="pending" aria-pressed="false">Pendientes</button>
+          <button type="button" class="secondary" data-filter="done" aria-pressed="false">Completadas</button>
+        </div>
+        <div class="backup">
+          <button type="button" id="export" class="secondary">Exportar JSON</button>
+          <label class="file-button">Importar JSON<input id="import" type="file" accept=".json,application/json"></label>
+        </div>
+      </div>
+      <ul id="tasks"></ul>
+      <p id="empty" class="empty">Todavía no hay tareas en esta vista.</p>
+    </section>
+  </main>
+  <script>
+    'use strict';
+    const KEY = 'aulafoco.tasks.v1';
+    const $ = id => document.getElementById(id);
+    let tasks = [];
+    let filter = 'all';
+
+    function validTask(t) {
+      return t && typeof t.id === 'string' && t.id.length > 0 &&
+        typeof t.title === 'string' && t.title.trim().length > 0 && t.title.length <= 100 &&
+        typeof t.subject === 'string' && t.subject.trim().length > 0 && t.subject.length <= 60 &&
+        typeof t.due === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(t.due) &&
+        !Number.isNaN(Date.parse(t.due)) &&
+        ['alta', 'media', 'baja'].includes(t.priority) && typeof t.done === 'boolean';
+    }
+    function notify(message, error = false) {
+      $('message').textContent = message;
+      $('message').classList.toggle('error', error);
+    }
+    function save() {
+      try { localStorage.setItem(KEY, JSON.stringify(tasks)); return true; }
+      catch { notify('No se pudo guardar. Comprueba el espacio y los permisos del navegador.', true); return false; }
+    }
+    function load() {
+      try {
+        const value = JSON.parse(localStorage.getItem(KEY) ?? '[]');
+        if (Array.isArray(value) && value.every(validTask)) tasks = value;
+        else notify('Los datos guardados no tienen un formato válido.', true);
+      } catch { notify('No se pudieron leer los datos guardados.', true); }
+    }
+    function render() {
+      const today = new Date();
+      const start = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+      const end = new Date(start); end.setDate(end.getDate() + 7);
+      $('pending-count').textContent = tasks.filter(t => !t.done).length;
+      $('done-count').textContent = tasks.filter(t => t.done).length;
+      $('soon-count').textContent = tasks.filter(t => !t.done && new Date(t.due + 'T00:00:00') >= start && new Date(t.due + 'T00:00:00') <= end).length;
+      document.querySelectorAll('[data-filter]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.filter === filter)));
+      const visible = tasks.filter(t => filter === 'all' || (filter === 'done' ? t.done : !t.done))
+        .sort((a, b) => a.due.localeCompare(b.due) || ({alta:0, media:1, baja:2}[a.priority] - {alta:0, media:1, baja:2}[b.priority]));
+      const list = $('tasks'); list.replaceChildren();
+      $('empty').hidden = visible.length > 0;
+      for (const task of visible) {
+        const li = document.createElement('li'); li.className = 'task' + (task.done ? ' done' : '');
+        const info = document.createElement('div');
+        const title = document.createElement('div'); title.className = 'task-title'; title.textContent = task.title;
+        const meta = document.createElement('div'); meta.className = 'meta';
+        meta.textContent = `${task.subject} · ${task.due} · Prioridad ${task.priority}`;
+        info.append(title, meta);
+        const actions = document.createElement('div'); actions.className = 'actions';
+        const toggle = document.createElement('button'); toggle.type = 'button'; toggle.className = 'secondary';
+        toggle.textContent = task.done ? 'Reabrir' : 'Completar';
+        toggle.addEventListener('click', () => { task.done = !task.done; if (save()) { render(); notify('Tarea actualizada.'); } });
+        const remove = document.createElement('button'); remove.type = 'button'; remove.className = 'danger'; remove.textContent = 'Eliminar';
+        remove.addEventListener('click', () => { tasks = tasks.filter(t => t.id !== task.id); if (save()) { render(); notify('Tarea eliminada.'); } });
+        actions.append(toggle, remove); li.append(info, actions); list.append(li);
+      }
+    }
+    $('task-form').addEventListener('submit', event => {
+      event.preventDefault();
+      const task = {
+        id: `${Date.now().toString(36)}-${Math.random().toString(36).slice(2)}`,
+        title: $('title').value.trim(), subject: $('subject').value.trim(), due: $('due').value,
+        priority: $('priority').value, done: false
+      };
+      if (!validTask(task)) { notify('Revisa los campos antes de añadir la tarea.', true); return; }
+      tasks.push(task);
+      if (save()) { $('task-form').reset(); render(); notify('Tarea añadida.'); }
+    });
+    document.querySelectorAll('[data-filter]').forEach(button => button.addEventListener('click', () => { filter = button.dataset.filter; render(); }));
+    $('export').addEventListener('click', () => {
+      const url = URL.createObjectURL(new Blob([JSON.stringify({ version: 1, tasks }, null, 2)], { type: 'application/json' }));
+      const link = document.createElement('a'); link.href = url; link.download = 'aulafoco-tareas.json'; link.click();
+      setTimeout(() => URL.revokeObjectURL(url), 1000); notify('Copia JSON descargada.');
+    });
+    $('import').addEventListener('change', async event => {
+      const file = event.target.files[0]; if (!file) return;
+      try {
+        const data = JSON.parse(await file.text());
+        if (data.version !== 1 || !Array.isArray(data.tasks) || !data.tasks.every(validTask)) throw new Error('Formato incorrecto');
+        const previous = tasks; tasks = data.tasks; if (!save()) { tasks = previous; return; }
+        render(); notify(`Importadas ${tasks.length} tareas.`);
+      } catch { notify('El archivo no es una copia válida de AulaFoco.', true); }
+      finally { event.target.value = ''; }
+    });
+    load(); render();
+  </script>
+</body>
+</html>
