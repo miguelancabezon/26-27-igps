@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="180" viewBox="0 0 700 180">
+  <rect width="700" height="180" rx="20" fill="#F1F5F9"/>
+
+  <rect x="35" y="39" width="92" height="102" rx="13" fill="#2563EB"/>
+
+  <path d="M81 54 L81 125 M48 66 Q65 58 81 70 Q97 58 114 66 L114 117 Q97 109 81 121 Q65 109 48 117 Z"
+        fill="#FFFFFF" stroke="#DBEAFE" stroke-width="3"/>
+
+  <path d="M81 70 L81 121" stroke="#2563EB" stroke-width="3"/>
+
+  <text x="155" y="102" font-family="Arial, sans-serif"
+        font-size="56" font-weight="bold" fill="#1E293B">StudyHub</text>
+
+  <text x="158" y="133" font-family="Arial, sans-serif"
+        font-size="19" fill="#64748B">Tu espacio de organización académica</text>
+</svg>
+
