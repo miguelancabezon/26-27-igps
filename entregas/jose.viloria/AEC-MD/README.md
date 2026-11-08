@@ -1,8 +1,9 @@
 # Ecos de Ceniza 
 <a id="presentacion-del-proyecto"></a>
 
-
 ## 1. Presentación del proyecto
+
+![Imagen representativa del juego](imagen-ecos-de-ceniza.jpg "Ecos de ceniza")
 
 ### Descripción general
 
@@ -354,6 +355,7 @@ func _on_player_detected() -> void:
 - Correo: [jose.viloria@alumnos.uneatlantico.es](mailto:jose.viloria@alumnos.uneatlantico.es)
 - GitHub: [github.com/joseviloria-sketch](https://github.com/joseviloria-sketch)
 - Repositorio: [github.com/joseviloria-sketch/](https://github.com/joseviloria-sketch/26-27-igps)
+
 <!--Tal vez en algún momento si que haga un juego con más o menos esta temática y estructura, por lo que es probable que el enlace de repositorio cambie-->
 
 ---
