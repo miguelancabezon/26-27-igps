@@ -100,6 +100,8 @@ Más información en la [documentación de Express](https://expressjs.com/es/) y
 
 ## Información adicional
 
+<!-- Falta poner la fecha de la versión 1.0 -->
+
 > Nota: este proyecto es ficticio y se ha hecho para la actividad de Markdown.
 
 <details>
@@ -108,6 +110,8 @@ Más información en la [documentación de Express](https://expressjs.com/es/) y
 Si sale el error `409`, el alumno ya tiene un turno en esa tutoría.
 
 </details>
+
+Para escribir un asterisco sin que se convierta en cursiva se pone una barra delante: \*
 
 ## Contacto
 
