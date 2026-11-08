@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 370" role="img" aria-labelledby="title desc">
+  <title id="title">StudyQuest - Aprende jugando</title>
+  <desc id="desc">Banner violeta y azul de StudyQuest con un mando, un mapa de aventura y una tarjeta de puntos de experiencia.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#10112e"/>
+      <stop offset="0.52" stop-color="#30205f"/>
+      <stop offset="1" stop-color="#164c75"/>
+    </linearGradient>
+    <linearGradient id="pad" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#b5abff"/>
+      <stop offset="1" stop-color="#6d62c9"/>
+    </linearGradient>
+    <filter id="shade" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="12" stdDeviation="13" flood-color="#050517" flood-opacity=".45"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="370" rx="28" fill="url(#bg)"/>
+  <g opacity=".12" fill="none" stroke="#d3d5ff" stroke-width="2">
+    <path d="M0 270H1200M0 305H1200M0 340H1200M700 0V370M770 0V370M840 0V370M910 0V370M980 0V370M1050 0V370M1120 0V370"/>
+    <path d="M810 270L910 170 970 204 1095 64" stroke-dasharray="8 11" stroke-width="5"/>
+  </g>
+  <circle cx="1005" cy="71" r="129" fill="#7c65f5" opacity=".13"/>
+  <circle cx="1080" cy="290" r="108" fill="#19caef" opacity=".12"/>
+  <g fill="#ffe58b" opacity=".8">
+    <path d="M60 62h7v-7h7v7h7v7h-7v7h-7v-7h-7z"/>
+    <path d="M646 90h6v-6h6v6h6v6h-6v6h-6v-6h-6z"/>
+    <path d="M1120 122h7v-7h7v7h7v7h-7v7h-7v-7h-7z"/>
+  </g>
+  <g transform="translate(80 116)" filter="url(#shade)">
+    <path d="M67 48c-27 0-38 12-48 46l-15 61c-7 28 16 40 35 26l50-42h132l48 42c21 17 44 1 37-25l-16-65c-8-32-21-43-48-43z" fill="url(#pad)" stroke="#dad1ff" stroke-width="5"/>
+    <rect x="73" y="83" width="17" height="63" rx="5" fill="#292952"/>
+    <rect x="49" y="106" width="64" height="17" rx="5" fill="#292952"/>
+    <circle cx="228" cy="92" r="12" fill="#2e316c"/>
+    <circle cx="256" cy="117" r="12" fill="#2e316c"/>
+    <circle cx="201" cy="118" r="12" fill="#e1bf52"/>
+    <circle cx="228" cy="143" r="12" fill="#e1bf52"/>
+    <rect x="139" y="92" width="35" height="11" rx="5" fill="#413a7d"/>
+  </g>
+  <text x="430" y="149" font-family="DejaVu Sans,Arial,sans-serif" font-size="72" font-weight="800" letter-spacing="-2" fill="#ffffff">Study<tspan fill="#b9f5ff">Quest</tspan></text>
+  <text x="432" y="196" font-family="DejaVu Sans,Arial,sans-serif" font-size="28" fill="#e3ddff">APRENDE JUGANDO · SUBE DE NIVEL</text>
+  <rect x="432" y="224" width="351" height="20" rx="10" fill="#141735" stroke="#8e85c9" stroke-width="2"/>
+  <rect x="435" y="227" width="235" height="14" rx="7" fill="#5de4c5"/>
+  <text x="433" y="272" font-family="DejaVu Sans,Arial,sans-serif" font-size="20" fill="#a2f6e2" font-weight="700">NIVEL 4 · 680 / 1000 XP</text>
+  <g transform="translate(898 174) rotate(-9)" filter="url(#shade)">
+    <rect x="0" y="0" width="206" height="115" rx="20" fill="#ffe1a0"/>
+    <rect x="11" y="11" width="184" height="93" rx="12" fill="#2b2457"/>
+    <text x="102" y="50" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="23" font-weight="700" fill="#fff">MISIÓN</text>
+    <text x="102" y="80" text-anchor="middle" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" font-weight="800" fill="#f8db81">+20 XP ✦</text>
+  </g>
+</svg>
