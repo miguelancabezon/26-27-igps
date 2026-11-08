@@ -24,6 +24,10 @@
 2. [Características principales](#características-principales)
 3. [Instalación y configuración](#instalación-y-configuración)
 4. [Tecnologías utilizadas](#tecnologías-utilizadas)
+5. [Arquitectura y funcionamiento](#arquitectura-y-funcionamiento)
+6. [Ejemplos de uso](#ejemplos-de-uso)
+7. [Información adicional](#información-adicional)
+8. [Contacto](#contacto)
 
 ## Características principales
 
@@ -92,3 +96,97 @@ Para preparar una integración futura, consultar la [guía oficial de Vue](https
 
 *Las versiones son referencias de diseño y deberán comprobarse por compatibilidad antes de una implementación real.*
 
+## Arquitectura y funcionamiento
+
+La propuesta consta de tres partes: el **panel web** recibe acciones del usuario, un **servicio backend** valida y procesa las solicitudes, y la **integración con WooCommerce** administra los productos y pedidos. El asistente de IA propone textos; el usuario decide si se publican.
+
+### Flujo: creación y publicación de un producto
+
+```mermaid
+flowchart TD
+    A[Usuario abre el panel] --> B[Selecciona una tienda]
+    B --> C[Introduce datos del producto]
+    C --> D[Solicita una descripción con IA]
+    D --> E[Revisa el contenido propuesto]
+    E --> F{¿Aprueba el texto?}
+    F -- No --> C
+    F -- Sí --> G[Backend valida la información]
+    G --> H[API REST de WooCommerce]
+    H --> I[Producto publicado en la tienda]
+```
+
+Este diagrama representa un **flujo planificado**, no una integración ya desplegada.
+
+## Ejemplos de uso
+
+Las siguientes peticiones representan el **contrato de una API hipotética**. Los endpoints `localhost:8000` aún no funcionan y se presentan únicamente para explicar el uso previsto.
+
+### Ejemplo 1. Crear una tienda
+
+Un usuario registraría una tienda con su nombre y dirección pública:
+
+```bash
+curl -X POST http://localhost:8000/api/tiendas \
+  -H "Content-Type: application/json" \
+  -d '{"nombre":"Mi Tienda Demo","dominio":"tienda.ejemplo.test"}'
+```
+
+**Respuesta ilustrativa:**
+
+```json
+{
+  "id": 1,
+  "nombre": "Mi Tienda Demo",
+  "estado": "pendiente_de_configuracion"
+}
+```
+
+### Ejemplo 2. Generar un borrador de descripción
+
+El propietario solicitaría una propuesta de texto para un producto, sin publicarla automáticamente:
+
+```bash
+curl -X POST http://localhost:8000/api/ia/descripciones \
+  -H "Content-Type: application/json" \
+  -d '{"producto":"Botella reutilizable","tono":"claro","idioma":"es"}'
+```
+
+**Respuesta ilustrativa:**
+
+```json
+{
+  "borrador": "Botella reutilizable para acompañarte cada día.",
+  "requiere_revision": true,
+  "publicado": false
+}
+```
+
+Como recursos complementarios están la [documentación de Vite](https://vite.dev/guide/) y la [guía de diagramas Mermaid](https://mermaid.js.org/syntax/flowchart.html).
+
+## Información adicional
+
+> ⚠️ **Recomendación de seguridad:** nunca almacenar contraseñas o claves de la API de WooCommerce en el código público. Utilizar variables de entorno y validar los permisos del usuario antes de ejecutar acciones.
+
+<details>
+<summary>Ver decisiones de diseño y posibles mejoras</summary>
+
+El proyecto prioriza una experiencia sencilla para pequeños negocios. Como ampliaciones futuras se proponen el historial de cambios, un sistema de roles y pruebas automáticas. Las sugerencias de IA no deben publicarse sin aprobación del usuario.
+
+</details>
+
+<!-- Comentario para mantenimiento: sustituir los endpoints ficticios cuando exista un backend de prueba. -->
+
+### Caracteres especiales en Markdown
+
+Para mostrar símbolos sin activar el formato se utiliza la barra invertida (`\`). Por ejemplo: \*oferta\*, \#promoción y \[enlace\] aparecen como texto literal.
+
+---
+
+## Contacto
+
+**Proyecto académico:** PIVOT IA — documentación de ejemplo para una actividad de evaluación continua.
+
+- Correo de muestra: `contacto@pivot-ia.example` (dirección ilustrativa, no operativa).
+- Referencias técnicas: [Vue.js](https://vuejs.org/) · [WooCommerce](https://woocommerce.com/) · [GitHub Docs](https://docs.github.com/es).
+
+*Documento original creado con fines educativos. Las funcionalidades y los ejemplos de API son ficticios.*
