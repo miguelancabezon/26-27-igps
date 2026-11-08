@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="Logotipo de Plazo: un calendario con un reloj">
+  <rect x="16" y="28" width="128" height="116" rx="16" fill="#1f6feb"/>
+  <rect x="16" y="28" width="128" height="34" rx="16" fill="#0b3d91"/>
+  <rect x="16" y="46" width="128" height="16" fill="#0b3d91"/>
+  <rect x="48" y="14" width="12" height="30" rx="6" fill="#d0d7de"/>
+  <rect x="100" y="14" width="12" height="30" rx="6" fill="#d0d7de"/>
+  <circle cx="80" cy="102" r="32" fill="#ffffff"/>
+  <path d="M80 80 V102 L96 112" fill="none" stroke="#0b3d91" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
