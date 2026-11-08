@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">MesaFácil — carta digital para restaurantes</title>
+  <desc id="desc">Ilustración de un teléfono mostrando una carta digital, acompañado de un plato y hojas decorativas.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff7ed"/><stop offset="1" stop-color="#f5e5d5"/></linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fffdf8"/><stop offset="1" stop-color="#f4e9dd"/></linearGradient>
+  </defs>
+  <rect width="1200" height="420" rx="34" fill="url(#bg)"/>
+  <circle cx="1010" cy="80" r="48" fill="#f2c99e" opacity=".48"/>
+  <circle cx="1080" cy="330" r="74" fill="#d7e0c5" opacity=".55"/>
+  <path d="M920 320c-42-78-23-132 18-166 22 48 22 100-18 166Z" fill="#6f8b5c" opacity=".8"/>
+  <path d="M937 303c9-58 42-91 85-97-6 55-39 88-85 97Z" fill="#91a77a"/>
+  <path d="M936 310 992 220" stroke="#526d45" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <g transform="translate(72 67)">
+    <rect x="0" y="0" width="240" height="286" rx="32" fill="#293b34"/>
+    <rect x="13" y="16" width="214" height="254" rx="22" fill="url(#screen)"/>
+    <rect x="91" y="7" width="58" height="5" rx="3" fill="#9aa79e"/>
+    <circle cx="120" cy="243" r="7" fill="#d1d9d0"/>
+    <text x="34" y="54" font-family="Arial, sans-serif" font-size="19" font-weight="700" fill="#293b34">MENÚ DEL DÍA</text>
+    <rect x="31" y="72" width="176" height="65" rx="12" fill="#e7d7c4"/>
+    <circle cx="64" cy="104" r="20" fill="#d68b45"/>
+    <circle cx="64" cy="104" r="12" fill="#f6d68f"/>
+    <path d="M53 100c7-11 17-10 23 0" stroke="#788a59" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <text x="95" y="98" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#293b34">Plato de temporada</text>
+    <text x="95" y="118" font-family="Arial, sans-serif" font-size="12" fill="#6f766e">12,50 €</text>
+    <rect x="31" y="149" width="176" height="65" rx="12" fill="#e7d7c4"/>
+    <circle cx="64" cy="181" r="20" fill="#b86e42"/>
+    <circle cx="64" cy="181" r="12" fill="#f0c778"/>
+    <text x="95" y="175" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#293b34">Postre casero</text>
+    <text x="95" y="195" font-family="Arial, sans-serif" font-size="12" fill="#6f766e">5,00 €</text>
+  </g>
+  <g transform="translate(395 115)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="24" letter-spacing="5" font-weight="700" fill="#b16d43">CARTA DIGITAL · RESERVAS</text>
+    <text x="0" y="82" font-family="Arial, sans-serif" font-size="72" font-weight="800" fill="#293b34">MesaFácil</text>
+    <text x="3" y="133" font-family="Arial, sans-serif" font-size="27" fill="#56645a">La carta de tu restaurante,</text>
+    <text x="3" y="171" font-family="Arial, sans-serif" font-size="27" fill="#56645a">siempre a mano.</text>
+    <rect x="0" y="215" width="250" height="54" rx="27" fill="#b16d43"/>
+    <text x="125" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" font-weight="700" fill="#fffaf4">MENÚ · CONTACTO</text>
+  </g>
+  <g transform="translate(912 126)">
+    <circle cx="95" cy="75" r="83" fill="#fffaf4" stroke="#d4b99d" stroke-width="8"/>
+    <circle cx="95" cy="75" r="58" fill="#e9d3b3" stroke="#b16d43" stroke-width="4"/>
+    <circle cx="95" cy="75" r="33" fill="#78905e"/>
+    <path d="M70 72c12-25 39-28 51-6-13 23-35 32-51 6Z" fill="#d7a653"/>
+    <path d="M88 40c-6 12-5 22 7 29 13-10 15-21 4-34" fill="#af6b43"/>
+    <path d="M45 -2v58M35 -2v25M55 -2v25M145 -2v58M135 -2v25M155 -2v25" stroke="#8a725d" stroke-width="5" stroke-linecap="round"/>
+  </g>
+</svg>
