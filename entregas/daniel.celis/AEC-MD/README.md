@@ -4,7 +4,7 @@
 
 ![Logotipo e ilustración de MesaFácil](assets/mesafacil-logo.svg)
 
-**MesaFácil** es un proyecto ficticio de aplicación web para que restaurantes y cafeterías puedan mostrar su carta de forma clara, actualizada y accesible desde cualquier dispositivo. El cliente puede consultar platos, filtrar por categorías, revisar información sobre alérgenos y preparar una solicitud de reserva mediante WhatsApp.
+**MesaFácil** es un proyecto ficticio de aplicación web para que restaurantes y cafeterías puedan mostrar su carta de forma clara (un proyecto que con mucaha coincidencia tenía en mente intentar hacer a la larga e intentar llevarlo a cabo), actualizada y accesible desde cualquier dispositivo. El cliente puede consultar platos, filtrar por categorías, revisar información sobre alérgenos y preparar una solicitud de reserva mediante WhatsApp.
 
 El proyecto se plantea como un **prototipo frontend**: no procesa pagos ni confirma reservas automáticamente. Su propósito es mejorar el acceso a la información del restaurante y simplificar el primer contacto entre el establecimiento y sus clientes.
 
@@ -173,7 +173,7 @@ flowchart TD
 ```text
 mesa-facil/
 ├── public/
-│   └── assets/
+│   └── imagen logo/
 ├── src/
 │   ├── data/
 │   │   └── menu.js
@@ -219,7 +219,7 @@ const reservation = {
   date: "2026-12-12",
   time: "21:00",
   people: 2,
-  name: "Alex"
+  name: "Juan"
 };
 
 const message = [
@@ -283,7 +283,7 @@ Este proyecto es académico y ficticio. Para consultas sobre la demostración se
 
 - **Responsable:** Equipo MesaFácil (contacto ficticio).
 - **Correo:** [hola@mesafacil.example](mailto:hola@mesafacil.example)
-- **Repositorio:** [github.com/USUARIO/mesa-facil](https://github.com/USUARIO/mesa-facil)
+- **Repositorio:** [github.com/USUARIO/mesa-facil](https://github.com/Daniel.Celis/mesa-facil)
 - **Documentación:** [Markdown Guide](https://www.markdownguide.org/)
 
 El dominio `.example` está reservado para ejemplos y no representa una dirección de correo real.
