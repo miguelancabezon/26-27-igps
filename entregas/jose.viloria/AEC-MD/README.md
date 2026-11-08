@@ -21,19 +21,22 @@ Aprender a desarrollar un juego, experimentando con el flujo que tienen que segu
 
 ---
 
-## 2. Índice de contenidos
 <a id="indice-de-contenidos"></a>
 
-- [1. Presentación del proyecto](#1-presentación-del-proyecto)
+## 2. Índice de contenidos
+
+- [1. Presentación del proyecto](#presentacion-del-proyecto)
 - [2. Índice de contenidos](#indice-de-contenidos)
-- [3. Características principales](#3-características-principales)
+- [3. Características principales](#caracteristicas-principales)
+- [4. Instalación y configuración](#instalacion-y-configuracion)
 
 <!--Espacio para el resto de contenidos del índice-->
 
 ---
 
-## 3. Características principales 
 <a id="caracteristicas-principales"></a>
+
+## 3. Características principales 
 
 1. **Mapa interconectado** con cinco zonas:
    - Ruinas
@@ -66,8 +69,111 @@ Aprender a desarrollar un juego, experimentando con el flujo que tienen que segu
 
 ---
 
+<a id="instalacion-y-configuracion"></a>
+
+## 4.- Instalación y configuración
+
+**Ecos de Ceniza** será un juego **100% gratuito**. Podrá ser descargado desde **itch.io** o desde **GitHub**, y no se necesita instalar Godot para jugarlo: el juego se distribuye ya exportado y listo para ejecutar.
+
+### Requisitos de sistema
+
+| Componente       | Mínimo                                      |
+| :--------------- | :------------------------------------------ |
+| Sistema          | Windows 10/11 (64 bits) o Linux (64 bits)   |
+| Memoria RAM      | 2 GB                                        |
+| Gráficos         | Compatible con *OpenGL 3.3* o superior      |
+| Espacio en disco | 200 MB libres                               |
+| Navegador (web)  | Chrome, Firefox o Edge actualizados         |
+| Extras           | Mando compatible con *XInput* (opcional)    |
+
+### Descarga
+ 
+Elige la plataforma de descarga que prefieras:
+ 
+- **itch.io**: También permite jugar directamente en el navegador, sin instalar nada.
+- **GitHub Releases**: Donde se encontrarán todas las versiones publicadas.
+
+| Plataforma        | Archivo                      | Tamaño aprox. |
+| :---------------- | :--------------------------- | ------------: |
+| Windows (64 bits) | `ecos-de-ceniza-windows.zip` |        150 MB |
+| Linux (64 bits)   | `ecos-de-ceniza-linux.zip`   |        140 MB |
+| Navegador (HTML5) | *Se juega en itch.io*        |             — |
+
+### Pasos de instalación 
+
+#### Windows
+ 
+1. Descarga el archivo `ecos-de-ceniza-windows.zip`.
+2. Extrae el contenido en una carpeta, por ejemplo `C:\Juegos\EcosDeCeniza`.
+3. Abre la carpeta y ejecuta `EcosDeCeniza.exe`.
+4. También puedes extraer el archivo desde **PowerShell**:
+ 
+```powershell
+Expand-Archive -Path .\ecos-de-ceniza-windows.zip -DestinationPath .\EcosDeCeniza
+ 
+.\EcosDeCeniza\EcosDeCeniza.exe
+```
+ 
+#### Linux
+ 
+1. Descarga `ecos-de-ceniza-linux.zip` desde itch.io o GitHub.
+2. Extrae el archivo y da permisos de ejecución con `chmod +x`.
+3. Ejecuta `EcosDeCeniza.x86_64`.
+
+```bash
+curl -L -o ecos-de-ceniza-linux.zip \
+  https://github.com/usuario/ecos-de-ceniza/releases/latest/download/ecos-de-ceniza-linux.zip
+ 
+unzip ecos-de-ceniza-linux.zip -d ecos-de-ceniza
+cd ecos-de-ceniza
+chmod +x EcosDeCeniza.x86_64
+./EcosDeCeniza.x86_64
+```
+ 
+#### Navegador
+ 
+1. Entra en la página del juego en [itch.io](https://usuario.itch.io/ecos-de-ceniza).
+2. Pulsa el botón **Run game** y espera a que cargue.
+3. Puedes activar la pantalla completa con el botón del reproductor.
+
+### Configuración
+ 
+Dentro del juego, el menú **Opciones** permite ajustar el volumen de la música y los efectos, la pantalla completa y los controles. Los ajustes y la partida se guardan en la carpeta de datos del usuario:
+ 
+| Sistema | Ruta de los datos del juego                                  |
+| :------ | :----------------------------------------------------------- |
+| Windows | `%APPDATA%\Godot\app_userdata\Ecos de Ceniza\`               |
+| Linux   | `~/.local/share/godot/app_userdata/Ecos de Ceniza/`          |
+ 
+### Controles
+ 
+| Acción        | Teclado    | Control      |
+| :------------ | :--------: | :----------: |
+| Mover         | `A` / `D`  | Stick izq.   |
+| Saltar        | `Espacio`  | `A`          |
+| Dash          | `Shift`    | `RB`         |
+| Atacar        | `J`        | `X`          |
+| Pausa         | `Esc`      | `Start`      |
+ 
+### Compilar desde el código fuente (opcional)
+ 
+Solo es necesario si quieres modificar el juego. Necesitas **Godot 4.3** o superior y **Git**.
+ 
+1. Clona el repositorio con `git clone`.
+2. Abre Godot, pulsa **Importar** y selecciona el archivo `project.godot`.
+3. Pulsa `F5` para ejecutar el proyecto.
+4. Para generar tu propia versión, ve a `Proyecto > Exportar` y elige `Windows`, `Linux` o `Web`.
+
+```bash
+git clone https://github.com/usuario/ecos-de-ceniza.git
+cd ecos-de-ceniza
+ 
+godot --editor --path .
+```
+ 
+---
+
 <!-- 
-4.- Instalación y configuración
 5.- Tecnologías utilizadas
 6.- Arquitectura o funcionamiento
 7.- Ejemplos de uso
