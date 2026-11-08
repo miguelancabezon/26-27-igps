@@ -232,7 +232,6 @@ con una barra invertida (`\`):
 
 ## Contacto
 
-- **Autor:** Nombre Apellido
-- **Correo:** [nombre.apellido@example.com](mailto:nombre.apellido@example.com)
-- **GitHub:** [github.com/tu-usuario](https://github.com/tu-usuario)
-- **Incidencias:** [Abrir una incidencia](https://github.com/tu-usuario/plantpal/issues)
+- **Autor:** Juan Castanedo
+- **Correo:** (mailto: juan.castanedo@alumnos.uneatlantico.es)
+- **GitHub:** (https://github.com/JuanCastanedo)
