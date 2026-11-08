@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="140" viewBox="0 0 480 140">
+  <rect width="480" height="140" rx="20" fill="#0d0d0d"/>
+  <g transform="translate(70 70)" fill="none" stroke="#e8e8e8" stroke-width="8" stroke-linecap="round">
+    <path d="M 30 -14 A 34 34 0 1 0 32 12"/>
+  </g>
+  <polygon points="88,40 112,52 92,68" fill="#e8e8e8"/>
+  <polygon points="62,56 62,84 84,70" fill="#b3122e"/>
+  <text x="135" y="86" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="46" font-weight="800" letter-spacing="8" fill="#e8e8e8">RESPAWN</text>
+</svg>
