@@ -29,6 +29,7 @@ Aprender a desarrollar un juego, experimentando con el flujo que tienen que segu
 - [2. Índice de contenidos](#indice-de-contenidos)
 - [3. Características principales](#caracteristicas-principales)
 - [4. Instalación y configuración](#instalacion-y-configuracion)
+- [5. Tecnologías utilizadas](#tecnologias-utilizadas)
 
 <!--Espacio para el resto de contenidos del índice-->
 
@@ -173,8 +174,23 @@ godot --editor --path .
  
 ---
 
+<a id="tecnologias-utilizadas"></a>
+
+## 5. Tecnologías utilizadas
+
+| Tecnología                      | Versión   | Descripción                                      | Uso en el proyecto                                              |
+| :------------------------------ | :-------: | :----------------------------------------------- | :-------------------------------------------------------------- |
+| **Godot Engine**                | `4.3`     | Motor de videojuegos *open source* 2D y 3D.      | Motor principal: escenas, físicas, entrada y exportación.       |
+| **GDScript**                    | `4.3`     | Lenguaje de scripting propio de Godot.           | Lógica del jugador, enemigos, GameManager y guardado.         |
+| **Aseprite**                    | `1.3`     | Editor de *pixel art* y animación.               | Creación de *sprites* y animaciones de personajes.              |
+| **LMMS**                        | `1.2`     | Software de música y edición de audio.           | Composición de la banda sonora y edición de efectos.            |
+| **Git** y **GitHub**            | `2.43`    | Control de versiones y alojamiento del código.   | Seguimiento de cambios y entrega del proyecto.                  |
+| **Mermaid**                     | `10.x`    | Herramienta de diagramas basada en texto.        | Diagramas de arquitectura incluidos en este `README.md`.        |
+
+---
+
+
 <!-- 
-5.- Tecnologías utilizadas
 6.- Arquitectura o funcionamiento
 7.- Ejemplos de uso
 8.- Información adicional
