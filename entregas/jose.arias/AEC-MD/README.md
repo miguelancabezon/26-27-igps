@@ -13,7 +13,8 @@ Dungeon Escape es un videojuego del género de **aventura conversacional**. El j
 
 Debes elegir entre distintos caminos. Algunos te llevarán un poco más cerca de la salida. Eso sí, ten mucho cuidado, porque parece que alguien te está siguiendo... :scream:
 
-![Portada Dungeon Escape](<entregas/jose.arias/AEC-MD/imgs/Dungeon_Escape_Portada.png>)
+![Portada Dungeon Escape](imgs/Dungeon_Escape_Portada.png)
+
 
 Decidí desarrollar este videojuego porque me gusta el desarrollo de videojuegos. Tengo experiencia previa desarrollando juegos en Unity, pero decidí desarrollar Dungeon Escape únicamente en Java para complementar mi aprendizaje en la universidad. Mi objetivo con este proyecto es aprender Java básico y entender cómo funcionan e interactúan entre sí las estructuras de control. También estoy aprendiendo a desarrollar un programa con un enfoque más narrativo, que es propio de este género de videojuegos.
 
