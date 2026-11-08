@@ -18,3 +18,30 @@
 
 ---
 
+## Índice de contenidos
+
+1. [Presentación del proyecto](#presentación-del-proyecto)
+2. [Características principales](#características-principales)
+
+## Características principales
+
+Las siguientes son **funcionalidades previstas**, no prestaciones disponibles actualmente:
+
+1. **Gestión de múltiples tiendas:** consultar varias tiendas desde un panel central.
+   - Mostrar un resumen de pedidos.
+   - Identificar productos pendientes de revisión.
+2. **Catálogo de productos:** crear fichas con nombre, precio, SKU e imágenes.
+3. **Asistente de redacción con IA:** proponer títulos y descripciones de productos.
+4. **Plantillas de tienda:** partir de diseños reutilizables para acelerar la configuración.
+5. **Automatización de tareas:** organizar avisos sobre pedidos y stock.
+6. **Panel de métricas:** visualizar ventas y productos más consultados.
+
+### Estado de desarrollo
+
+- [x] Definir el problema, el objetivo y las funcionalidades.
+- [x] Documentar el flujo principal y la arquitectura propuesta.
+- [ ] Desarrollar el panel de administración.
+- [ ] Integrar la API de WooCommerce.
+- [ ] Implementar el asistente de IA con revisión humana.
+- [ ] Realizar pruebas con usuarios y publicar una versión estable.
+
