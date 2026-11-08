@@ -15,6 +15,20 @@
 
 ---
 
+## Presentación del proyecto
+
+Plazo guarda en una base de datos local las entregas de cada asignatura, calcula cuánto falta para cada una y avisa con antelación. Se usa desde la terminal con el comando `plazo`, y la misma información está disponible en una API para conectarla con otras aplicaciones.
+
+### Objetivo principal
+
+Conseguir que un estudiante pueda responder en **menos de cinco segundos** a una sola pregunta: *¿qué tengo que entregar primero?*
+
+### Problema que resuelve
+
+Las fechas de entrega suelen estar repartidas entre varias plataformas: el campus virtual, los repositorios de cada asignatura, el correo y los apuntes de clase. Plazo las reúne en una única lista ordenada por urgencia, de modo que ninguna entrega dependa de ~~recordarla de memoria~~ haberla visto a tiempo.
+
+---
+
 ## Índice de contenidos
 
 - [Presentación del proyecto](#presentación-del-proyecto)
@@ -33,20 +47,6 @@
 - [Información adicional](#información-adicional)
   - [Sintaxis de los títulos](#sintaxis-de-los-títulos)
   - [Contacto](#contacto)
-
----
-
-## Presentación del proyecto
-
-Plazo guarda en una base de datos local las entregas de cada asignatura, calcula cuánto falta para cada una y avisa con antelación. Se usa desde la terminal con el comando `plazo`, y la misma información está disponible en una API para conectarla con otras aplicaciones.
-
-### Objetivo principal
-
-Conseguir que un estudiante pueda responder en **menos de cinco segundos** a una sola pregunta: *¿qué tengo que entregar primero?*
-
-### Problema que resuelve
-
-Las fechas de entrega suelen estar repartidas entre varias plataformas: el campus virtual, los repositorios de cada asignatura, el correo y los apuntes de clase. Plazo las reúne en una única lista ordenada por urgencia, de modo que ninguna entrega dependa de ~~recordarla de memoria~~ haberla visto a tiempo.
 
 ---
 
