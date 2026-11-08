@@ -1,6 +1,6 @@
 # Ecos de Ceniza 
 <a id="presentacion-del-proyecto"></a>
-<!--Imagen del juego aquí más adelante-->
+
 
 ## 1. Presentación del proyecto
 
@@ -32,8 +32,8 @@ Aprender a desarrollar un juego, experimentando con el flujo que tienen que segu
 - [5. Tecnologías utilizadas](#tecnologias-utilizadas)
 - [6. Arquitectura y funcionamiento](#arquitectura-y-funcionamiento)
 - [7. Ejemplos de uso](#ejemplos-de-uso)
-
-<!--Espacio para el resto de contenidos del índice-->
+- [8. Información general](#informacion-general)
+- [9. Elementos visuales y avanzados](#elementos-visuales-y-avanzados)
 
 ---
 
@@ -252,7 +252,7 @@ graph TD
 
 El estado `Dash` del jugador se implementa así:
 
-<!-- gdscript no se puestra con colores ;( -->
+<!-- gdscript no se muestra con colores ;( -->
 
 ```
 # scripts/player/state_dash.gd
@@ -319,10 +319,74 @@ func _on_player_detected() -> void:
 
 ---
 
-<!-- 
-8.- Información adicional
-9.- Elementos visuales y avanzados
+<a id="informacion-adicional"></a>
 
-Ya falta menos!!! :D
+## 8. Información adicional
 
---> 
+<details>
+<summary>Hoja de ruta (<em>roadmap</em>)</summary>
+
+| Versión | Contenido previsto                         |
+| :-----: | :----------------------------------------- |
+| `v0.2`  | Jefes finales y correr por paredes         |
+| `v0.3`  | Modo difícil y minimapa                    |
+| `v1.0`  | Lanzamiento público en itch.io             |
+
+**Problemas conocidos**
+
+- Algunas colisiones fallan al hacer dash contra esquinas.
+- El minimapa aún no está implementado.
+
+</details>
+
+<details>
+<summary>Créditos y licencia</summary>
+
+- Diseño, programación y arte: *José Manuel Viloria Rodríguez*.
+- Tipografía: [Press Start 2P](https://fonts.google.com/specimen/Press+Start+2P) (licencia OFL).
+- Licencia del código: **MIT**.
+
+</details>
+
+### Contacto
+
+- Autor: José Manuel Viloria Rodríguez
+- Correo: [jose.viloria@alumnos.uneatlantico.es](mailto:jose.viloria@alumnos.uneatlantico.es)
+- GitHub: [github.com/joseviloria-sketch](https://github.com/joseviloria-sketch)
+- Repositorio: [github.com/joseviloria-sketch/](https://github.com/joseviloria-sketch/26-27-igps)
+<!--Tal vez en algún momento si que haga un juego con más o menos esta temática y estructura, por lo que es probable que el enlace de repositorio cambie-->
+
+---
+
+<a id="elementos-visuales-y-avanzados"></a>
+
+## 9. Elementos visuales y avanzados
+
+### Badges
+
+![Godot](https://img.shields.io/badge/Godot-4.3-478CBF?logo=godotengine&logoColor=white)
+![Licencia](https://img.shields.io/badge/licencia-MIT-green)
+![Estado](https://img.shields.io/badge/estado-prototipo-orange)
+![Versión](https://img.shields.io/badge/versi%C3%B3n-0.1.0-blue)
+
+### Emojis
+
+:video_game: Juego de plataformas · :robot: Protagonista autómata · :floppy_disk: Guardado de partida · :rocket: Próximas versiones
+
+### Caracteres especiales escapados
+
+Resultado en pantalla: \*esto no está en cursiva\*, \_ni esto en cursiva\_, \# esto no es un encabezado, \[esto no es un enlace\], el acento grave \` y la barra invertida \\ se muestran tal cual.
+
+Así se escriben en el código fuente:
+
+```markdown
+\*esto no está en cursiva\*
+\_ni esto en cursiva\_
+\# esto no es un encabezado
+\[esto no es un enlace\]
+\` y \\
+```
+
+---
+
+*Hecho con :heart: y mucho café para la asignatura de IGPS :D.*
