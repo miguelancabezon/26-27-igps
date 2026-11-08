@@ -1,4 +1,5 @@
 # CAMBIO FÁCIL
+<!-- Comentario en HTML: este texto no aparece en la visualización del documento. -->
 <a id="begin"></a>
 
 ![Java](https://img.shields.io/badge/Java-21-orange?logo=openjdk&logoColor=white) 
@@ -18,13 +19,10 @@ El objetivo de **Cambio Fácil** es:
 - **Eliminar errores de cálculo** de forma definitiva al devolver el cambio. 
 - **Agilizar** el cobro a los clientes.
 - Mostrar **qué billetes y monedas deben entregarse**, no solo la cantidad total.
-
-![Foto app](./fto%20doc.jpeg)
-----
+![Foto app](./foto.jpeg)
 
 ## Indice
 <a id="indice"></a>
-
 1. [Presentación de "Cambio Fácil"](#begin)
 2. [Objetivos del proyecto](#objetivos)
 3. [Índice de contenidos](#indice)
@@ -40,7 +38,6 @@ El objetivo de **Cambio Fácil** es:
     - [Contacto](#contacto)
 10. [Elementos visuales y avanzados](#visuales)
     - [Caracteres especiales escapados](#escapados)
-
 ## Características principales
 <a id="caracteristicas"></a>
 
@@ -75,14 +72,14 @@ El objetivo de **Cambio Fácil** es:
 <a id="instalacion"></a>
 
 1. Comprueba que tienes instalado **Java 21** con ```java -version```, ```javac -version```.
-2. Instala **Visual Studio Code**, y una extensión para poder depurar y ejecutar java. Por ejempplo _"Extension Pack for Java"_ .
+2. Instala **Visual Studio Code**, y una extensión para poder depurar y ejecutar java. Por ejemplo _"Extension Pack for Java"_ .
 3. **Clona el repositorio** usando el comando ```git clone```.
 
 4. Abre la carpeta de Cambio Fácil en VS Code. ```cd (Ruta de carpetas hasta llegar a AEC-MD)```.
 
 5. **Compila el código** desde la terminal con ```javac```.
 
-6. **Ejecuta la aplicación** pulsando sobre el boton ```Run``` que aparece sobre el "main" en VS Code.
+6. **Ejecuta la aplicación** pulsando sobre el botón ```Run``` que aparece sobre el "main" en VS Code.
 
 Por lo que deberia quedar:
 ``` bash 
@@ -104,7 +101,7 @@ javac -d out src/*.java
 | **Java** | `21` | _Lenguaje de programación orientado a objetos_ | Creación de todo el código |
 | **Visual Studio Code** | `1.x` | _Editor de código_ | Desarrollo, depuración y ejecución |
 | **Extension Pack for Java** | `Última` | _Conjunto de extensiones para usar Java en VS Code_ | Aparezca el botón `Run` y para la depuración del `main` |
-| **Git / GitHub** | `2.x` | _Controlas versiones_ | Almacenar el historial del código y entregarlo mediante _pull request_ |
+| **Git / GitHub** | `2.x` | _Controla las versiones_ | Almacenar el historial del código y entregarlo mediante _pull request_ |
 | **Mermaid** | `10.x` | _Diagramas definidos con texto_ | Diagrama de flujo de la documentación |
 ------
 ## Arquitectura y funcionamiento
@@ -112,7 +109,7 @@ javac -d out src/*.java
 
 La aplicación comienza pidiendote el **importe que debes pagar**.
 A continuación deberás **introducir la cantidad de dinero necesaria para pagar el artículo**.
-Cuando ya tiene los datos, **comprueba que el dinero entregado es suficiente**, y **realiza los cálculos** necesarios para dar el cambio utilizando el **menor número** de monedas y billetes posibles.
+Cuando ya tiene los datos, **comprueba que el dinero entregado es suficiente**, y **realiza los cálculos** necesarios para dar el cambio utilizando el **menor número** de monedas y billetes posibles. :moneybag:
 
 ```mermaid
 flowchart TD
@@ -171,7 +168,7 @@ Cambio a devolver: 1,50 €
 #### Recursos relacionados
 <a id="recursos"></a>
 
-- [Apuntes Markdow IGPS](https://github.com/miguelancabezon/IGPS/blob/main/temario/4-markdown/clase-7-markdown-introduccion.md).
+- [Apuntes Markdown IGPS](https://github.com/miguelancabezon/IGPS/blob/main/temario/4-markdown/clase-7-markdown-introduccion.md).
 - [Como usar Java en VS Code (tutorial)](https://www.youtube.com/watch?v=Vbal3r592-g).
 - [Apuntes mermaid](https://mermaid.js.org/intro/).
 -------
@@ -179,7 +176,7 @@ Cambio a devolver: 1,50 €
 ## Información adicional
 <a id="informacion"></a>
 
->🚨 Al usar esta app se debe de tener en cuenta que **no es una caja registradora oficial**, ya que no emite nungún ticket, ni sigue ninguna normativa. 🚨
+>🚨 Al usar esta app se debe de tener en cuenta que **no es una caja registradora oficial**, ya que no emite ningún ticket, ni sigue ninguna normativa. 🚨
 
 <details> 
 <summary>Ver cómo se calcula el desglose de billetes y monedas</summary>
@@ -213,10 +210,10 @@ Para el desarrollo de este proyecto he utilizado.
 
 En Markdown, hay caracteres que tienen **significados especiales**. Por ejemplo, `*` pone el texto en cursiva, o `**` en negrita y `#` crea un encabezado.
 
-Es por ello que si queremos escribir estos símbolos sin que se activen estas funciones, hay que escribirlo con una barra `/` delante. 
+Es por ello que si queremos escribir estos símbolos sin que se activen estas funciones, hay que escribirlo con una barra `\` delante. 
 Cuando usamos este simbolo se dice que estamos **"Escapando un caracter"**.
 
-Por ejemplo: Quiero escribir *Hoy*, pero no quiero que este en cursiva, sino que aparezcan los asteriscos. Es por ello que hay que escribir `/*Hoy*/`, para que aparezca `*Hoy*`.
+Por ejemplo: Quiero escribir *Hoy*, pero no quiero que este en cursiva, sino que aparezcan los asteriscos. Es por ello que hay que escribir `\*Hoy\*`, para que aparezca `*Hoy*`.
 
 
 
