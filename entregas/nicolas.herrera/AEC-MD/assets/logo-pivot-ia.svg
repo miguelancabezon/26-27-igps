@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="290" viewBox="0 0 1200 290" role="img" aria-labelledby="title desc">
+  <title id="title">PIVOT IA</title>
+  <desc id="desc">Logotipo de una bolsa comercial minimalista con un destello tecnológico y texto PIVOT IA.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1737"/><stop offset="1" stop-color="#112d47"/></linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#72e6ec"/><stop offset="1" stop-color="#5a92f2"/></linearGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="16"/></filter>
+  </defs>
+  <rect width="1200" height="290" rx="30" fill="url(#bg)"/>
+  <circle cx="160" cy="160" r="106" fill="#65e9e4" opacity="0.12" filter="url(#soft)"/>
+  <circle cx="1112" cy="62" r="170" fill="#5498f0" opacity="0.08"/>
+  <g transform="translate(75 54)" fill="none" stroke="url(#accent)" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="24" y="66" width="135" height="122" rx="18" stroke-width="10"/>
+    <path d="M59 69 V48 C59 22 78 9 92 9 S125 22 125 48 V69" stroke-width="10"/>
+    <path d="M94 91 L103 114 L125 121 L103 129 L94 151 L84 129 L61 121 L84 114 Z" fill="#77e8ec" stroke="none"/>
+    <circle cx="157" cy="34" r="7" fill="#9cdcf8" stroke="none"/>
+    <circle cx="179" cy="49" r="4" fill="#9cdcf8" stroke="none"/>
+  </g>
+  <text x="302" y="145" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="92" font-weight="800" letter-spacing="-3">PIVOT <tspan fill="#77dfe9">IA</tspan></text>
+  <text x="308" y="195" fill="#bed4e8" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="500" letter-spacing="2">ECOMMERCE · AUTOMATIZACIÓN · INTELIGENCIA ARTIFICIAL</text>
+  <rect x="306" y="221" width="418" height="4" rx="2" fill="url(#accent)" opacity="0.85"/>
+</svg>
