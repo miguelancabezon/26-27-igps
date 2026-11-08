@@ -172,4 +172,4 @@ pintarLista(pendientes);
 
 ## Notas de formato
 
-Para mostrar caracteres especiales de Markdown se escapan con una barra invertida: \*esto no queda en cursiva\*, \# esto no es un título y \_esto no se subraya\_.
+Para mostrar caracteres especiales de Markdown se escapan con una barra invertida: \*esto no queda en cursiva\*, \# esto no es un título y \_esto no se subraya\_
