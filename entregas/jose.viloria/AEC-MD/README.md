@@ -30,6 +30,7 @@ Aprender a desarrollar un juego, experimentando con el flujo que tienen que segu
 - [3. Características principales](#caracteristicas-principales)
 - [4. Instalación y configuración](#instalacion-y-configuracion)
 - [5. Tecnologías utilizadas](#tecnologias-utilizadas)
+- [6. Arquitectura y funcionamiento](#arquitectura-y-funcionamiento)
 
 <!--Espacio para el resto de contenidos del índice-->
 
@@ -189,9 +190,56 @@ godot --editor --path .
 
 ---
 
+<a id="arquitectura-y-funcionamiento"></a>
+
+## 6. Arquitectura y funcionamiento
+
+El juego se organiza en **escenas** reutilizables (`Player`, `Enemy`, `Level`, `UI`) y un **autoload** llamado `GameManager`, que guarda el estado global: habilidades desbloqueadas, salas visitadas y vida máxima.
+
+- El **jugador** se controla con una máquina de estados: `Idle`, `Run`, `Jump`, `Fall`, `Dash`, `Wall`, `Attack` y `Hurt`.
+- Los sistemas se comunican mediante **señales** (por ejemplo, `hability_achived`), lo que evita dependencias directas entre nodos.
+- Cada **zona bloqueada** consulta un flag en `GameManager` para saber si el jugador puede pasar.
+
+### Estructura de carpetas
+
+```
+ecos-de-ceniza/
+├── project.godot
+├── scenes/      # Player, Enemy, Level, UI
+├── scripts/     # GDScript: estados, GameManager, guardado
+├── assets/      # Sprites y tilesets
+├── audio/       # Música y efectos
+└── docs/        # Capturas y documentación
+```
+
+### Diagrama de flujo del desbloqueo de habilidades y guardado
+
+```mermaid
+graph TD
+    A([Inicio de partida]) --> B{¿Existe una partida guardada?}
+    B -- Sí --> C[Cargar posición y habilidades]
+    B -- No --> D[Nueva partida en Ruinas]
+    C --> E[Exploración]
+    D --> E
+    E --> F{¿Obstáculo o puerta?}
+    F -- No --> E
+    F -- Sí --> G{¿Habilidad desbloqueada?}
+    G -- No --> H[Buscar otra ruta]
+    H --> E
+    G -- Sí --> I[Atravesar la zona]
+    I --> J{¿Hay un cofre de habilidad?}
+    J -- Sí --> K[Emitir señal habilidad_desbloqueada]
+    K --> L[Actualizar flags en GameManager]
+    L --> E
+    J -- No --> M{¿Baliza de guardado?}
+    M -- Sí --> N[Escribir save.json]
+    N --> E
+    M -- No --> E
+```
+
+---
 
 <!-- 
-6.- Arquitectura o funcionamiento
 7.- Ejemplos de uso
 8.- Información adicional
 9.- Elementos visuales y avanzados
