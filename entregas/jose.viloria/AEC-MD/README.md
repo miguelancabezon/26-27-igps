@@ -31,6 +31,7 @@ Aprender a desarrollar un juego, experimentando con el flujo que tienen que segu
 - [4. Instalación y configuración](#instalacion-y-configuracion)
 - [5. Tecnologías utilizadas](#tecnologias-utilizadas)
 - [6. Arquitectura y funcionamiento](#arquitectura-y-funcionamiento)
+- [7. Ejemplos de uso](#ejemplos-de-uso)
 
 <!--Espacio para el resto de contenidos del índice-->
 
@@ -182,7 +183,7 @@ godot --editor --path .
 | Tecnología                      | Versión   | Descripción                                      | Uso en el proyecto                                              |
 | :------------------------------ | :-------: | :----------------------------------------------- | :-------------------------------------------------------------- |
 | **Godot Engine**                | `4.3`     | Motor de videojuegos *open source* 2D y 3D.      | Motor principal: escenas, físicas, entrada y exportación.       |
-| **GDScript**                    | `4.3`     | Lenguaje de scripting propio de Godot.           | Lógica del jugador, enemigos, GameManager y guardado.         |
+| **GDScript**                    | `4.3`     | Lenguaje de scripting propio de Godot.           | Lógica del jugador, enemigos, GameManager y guardado.           |
 | **Aseprite**                    | `1.3`     | Editor de *pixel art* y animación.               | Creación de *sprites* y animaciones de personajes.              |
 | **LMMS**                        | `1.2`     | Software de música y edición de audio.           | Composición de la banda sonora y edición de efectos.            |
 | **Git** y **GitHub**            | `2.43`    | Control de versiones y alojamiento del código.   | Seguimiento de cambios y entrega del proyecto.                  |
@@ -239,11 +240,89 @@ graph TD
 
 ---
 
+<a id="ejemplos-de-uso"></a>
+
+## 7. Ejemplos de uso
+
+### Ejemplo 1: desbloquear el dash y llegar a una nueva zona
+
+1. Explora las **Cloacas** hasta encontrar el dash.
+2. Vuelve al **Bosque Oxidado**, donde un abismo por ejemplo bloquea el camino.
+3. Haz un dash en pleno salto para cruzar.
+
+El estado `Dash` del jugador se implementa así:
+
+<!-- gdscript no se puestra con colores ;( -->
+
+```
+# scripts/player/state_dash.gd
+extends State
+
+const DASH_SPEED := 600.0
+const DASH_TIME := 0.2
+
+var timer := 0.0
+
+func enter() -> void:
+    timer = DASH_TIME
+    player.velocity = Vector2(player.facing * DASH_SPEED, 0.0)
+
+func physics_update(delta: float) -> void:
+    timer -= delta
+    player.move_and_slide()
+    if timer <= 0.0:
+        state_machine.change_state("Fall")
+```
+
+Y la puerta del abismo podría comprobar la habilidad en el `GameManager`:
+
+```
+# scripts/world/ability_gate.gd
+extends Area2D
+
+@export var required_ability: String = "dash"
+
+func _on_body_entered(body: Node2D) -> void:
+    if body.is_in_group("player") and GameManager.has_ability(required_ability):
+        queue_free()  # La barrera desaparece
+```
+
+### Ejemplo 2: añadir un enemigo nuevo
+
+1. Duplica la escena `scenes/enemies/enemy_base.tscn`.
+2. Cambia el sprite y ajusta las estadísticas en el Inspector.
+3. Asigna un script que herede del enemigo base:
+
+```
+# scripts/enemies/enemy_slime.gd
+extends EnemyBase
+
+func _ready() -> void:
+    max_health = 3
+    speed = 40.0
+    damage = 1
+
+func _on_player_detected() -> void:
+    state_machine.change_state("Chase")
+```
+
+4. Coloca la escena en un nivel arrastrándola desde el panel *Sistema de archivos*.
+
+**Recursos relacionados**
+
+- [Documentación oficial de Godot](https://docs.godotengine.org/es/4.x/)
+- [CharacterBody2D en la documentación de Godot](https://docs.godotengine.org/en/stable/classes/class_characterbody2d.html)
+- [Guardar y cargar partidas (Godot)](https://docs.godotengine.org/es/4.x/tutorials/io/saving_games.html)
+- [Guía de sintaxis de Mermaid](https://mermaid.js.org/intro/)
+
+<!-- Realmente no encuentro manera de poner ejemplos prácticos para un videojuego, ya que sería un proyecto para entretenimiento, no funcionalidad, pero los elementos de mark down están, así que espero que igual le agrade profe :) -->
+
+---
+
 <!-- 
-7.- Ejemplos de uso
 8.- Información adicional
 9.- Elementos visuales y avanzados
 
-Aún falta mucho T-T
+Ya falta menos!!! :D
 
 --> 
