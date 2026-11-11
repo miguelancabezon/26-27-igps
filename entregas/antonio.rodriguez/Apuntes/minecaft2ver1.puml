@@ -1,0 +1,21 @@
+@startgantt
+
+Project starts the 2026-11-11
+
+-- Fase 1: Motor --
+[Renderizacion esferas] lasts 60 days
+[Sistema Construccion] lasts 10 days
+[Sistema recetas] lasts 2 days
+[Sistema Construccion] happens at [Renderizacion esferas]'s end
+[Sistema recetas] happens at [Sistema Construccion]'s end
+
+-- Fase 2: Pinguinos --
+[Movimiento] lasts 10 days
+[Incubar huevos] lasts 20 days
+[Deslizarse] lasts 5 days
+[Sistema recetas]->[Movimiento]
+[Deslizarse] happens at [Movimiento]'s end
+[Incubar huevos] happens at [Sistema recetas]'s end
+
+
+@endmindmap
