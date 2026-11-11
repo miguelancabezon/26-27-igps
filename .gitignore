@@ -1,0 +1,14 @@
+# Auto generated files
+
+# OS related files/folders
+**/.DS_Store
+**/Thumbs.db
+**/Desktop.ini
+
+# IDEs related files/folders
+.vscode/
+.idea/
+*.suo
+*.user
+*~
+*.swp
