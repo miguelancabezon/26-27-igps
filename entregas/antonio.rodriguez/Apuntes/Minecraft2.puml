@@ -1,0 +1,30 @@
+@startmindmap
+<style>
+mindmapDiagram{
+    rootNode {
+        BackgroundColor LightGreen
+        FontColor #f0f0f0
+    }
+}
+</style>
+
+* Minecraft 2
+** Esferas
+*** Nueva Construccion
+*** Nuevos crafteos
+*** Nuevas Specs
+*** Nueva renderizacion
+** Pinguinos
+*** Movimiento jugador estilo Pinguinos
+*** Incubacion de huevos
+*** Deslizarse
+** Emotes
+*** La macarena
+
+left side
+** MMO
+*** Servidore
+*** Cuentas
+*** Encriptacion
+*** Moderadores
+@endmindmap

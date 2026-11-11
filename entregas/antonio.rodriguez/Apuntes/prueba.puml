@@ -1,0 +1,43 @@
+@startgantt
+
+Project starts the 2026-11-09
+
+title Desarrollo Companion App
+
+-- Análisis --
+
+[Definir funcionalidades] requires 2 days
+[Diseñar estructura de datos] requires 3 days
+
+[Diseñar estructura de datos] starts at [Definir funcionalidades]'s end
+
+-- Diseño --
+
+[Diseñar interfaz] requires 4 days
+[Prototipo navegable] requires 2 days
+
+[Diseñar interfaz] starts at [Definir funcionalidades]'s end
+[Prototipo navegable] starts at [Diseñar interfaz]'s end
+
+-- Desarrollo --
+
+[Backend] requires 6 days
+[Frontend] requires 6 days
+
+[Backend] starts at [Diseñar estructura de datos]'s end
+[Frontend] starts at [Prototipo navegable]'s end
+
+-- Validación --
+
+[Integración] requires 2 days
+[Pruebas] requires 3 days
+
+[Integración] starts at [Backend]'s end
+[Integración] starts at [Frontend]'s end
+[Pruebas] starts at [Integración]'s end
+
+-- Entrega --
+
+[Primera versión] happens at [Pruebas]'s end
+
+@endgantt

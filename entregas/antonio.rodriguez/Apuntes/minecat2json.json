@@ -1,0 +1,27 @@
+@startjson
+{
+     "Partida": 2321,
+    "survival": true,
+    "numJugadores": 4,
+    "jugadores": [
+        {
+            "name": "Elsin verguneza",
+            "speed": 4.5
+        },
+        {
+            "name": "Diego Garcia",
+            "speed": 6.5
+        },
+        {
+            "name": "Ines Montes",
+            "speed": 3.5
+        },
+        {
+            "name": "Homero Simpson",
+            "speed": 5.5
+        }
+    ],
+    "whitelist": [],
+    "blacklist":[]
+}
+@endjson
